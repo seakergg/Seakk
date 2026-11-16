@@ -34,3 +34,9 @@ A Beállítások → *Variáns* menüben választhatók (nem értékelt játszm�
 ## Animációk
 
 Minden stílusnak saját effektkészlete van (nyomvonal, leérkezés, ütés, a leütött bábu eltűnése, sakk-gyűrű, matt, átváltozás, konfetti): neon = pixelek és glitch, kristály = szilánkok, erdő = levelek és hervadás, naplemente = fényszikrák, rózsa = szirmok, homok = por és omlás, jég = hópelyhek és fagyás, láva = parázs és égés. A sáncolásnál a bástya célmezején a logó stílusú (kék/fehér/ezüst, világító gyűrűs) kastély nő ki a földből.
+
+
+## Minijátékok (Feladvány fül)
+
+- **Guess the Elo:** a gép két azonos erősségű (500–2000 Elo) játékos között legenerál egy ~22 lépéses játszmát, te pedig végignézed (léptetés, lejátszás, lépéslistára kattintás), majd csúszkával tippelsz a szintre. A pontszám az eltéréstől függ (0 eltérés = 100 pont), az összesítés mentődik.
+- **Nyitás-rulett:** pörgethető kerék a beépített megnyitásokból. A kisorsolt állásból választott színnel (vagy véletlenül) játszol a gép ellen az aktuális szinten, nem értékelt. A megnyitás neve a táblánál is látszik.
