@@ -40,3 +40,13 @@ Minden stílusnak saját effektkészlete van (nyomvonal, leérkezés, ütés, a 
 
 - **Guess the Elo:** a gép két azonos erősségű (500–2000 Elo) játékos között legenerál egy ~22 lépéses játszmát, te pedig végignézed (léptetés, lejátszás, lépéslistára kattintás), majd csúszkával tippelsz a szintre. A pontszám az eltéréstől függ (0 eltérés = 100 pont), az összesítés mentődik.
 - **Nyitás-rulett:** pörgethető kerék a beépített megnyitásokból. A kisorsolt állásból választott színnel (vagy véletlenül) játszol a gép ellen az aktuális szinten, nem értékelt. A megnyitás neve a táblánál is látszik.
+
+
+## További variánsok (Beállítások → Variáns)
+
+- **Király a hegyen:** a matt mellett az nyer, akinek a királya a d4, d5, e4 vagy e5 mezőre lép (a négy mező aranyszínnel jelölt).
+- **Három sakk:** a tábla alatt mindkét fél sakkszámlálója (♔ 0/3 · ♚ 0/3), aki először ad 3 sakkot, nyer.
+- **Atomi sakk:** ütéskor a célmező és a 8 szomszédja megsemmisül (a szomszédos gyalogok túlélik), a király nem üthet, az ellenfél királyának felrobbantása azonnali győzelem, szomszédos királyok nincsenek sakkban. Robbanás-animációval.
+- **Ködös sakk:** csak a saját bábuk, az általuk elérhető mezők és a gyalogok átlós mezői látszanak, a többi sötét, az ott álló ellenséges bábuk rejtettek. Egy gépen (2 játékos) lépés után „Következő játékos” átadó képernyő jelenik meg. A lépéslista és a tipp a játszma végéig rejtett.
+
+Mind a négy működik a gép ellen és online szobában is, nem értékelt játszma, és mentés / folytatás / PGN-export is kezeli.
