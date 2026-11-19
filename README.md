@@ -50,3 +50,26 @@ Minden stílusnak saját effektkészlete van (nyomvonal, leérkezés, ütés, a 
 - **Ködös sakk:** csak a saját bábuk, az általuk elérhető mezők és a gyalogok átlós mezői látszanak, a többi sötét, az ott álló ellenséges bábuk rejtettek. Egy gépen (2 játékos) lépés után „Következő játékos” átadó képernyő jelenik meg. A lépéslista és a tipp a játszma végéig rejtett.
 
 Mind a négy működik a gép ellen és online szobában is, nem értékelt játszma, és mentés / folytatás / PGN-export is kezeli.
+
+
+## Linkes meghívó és állásszerkesztő
+
+- **Meghívó link:** Online fül → *Szoba nyitása* után a **Meghívó link** gomb a megosztó menüt nyitja (vagy vágólapra másol): `…/index.html?invite=KÓD`. A linkre kattintva a másik fél automatikusan a szobához csatlakozik, másolgatás nélkül (a régi `#r=KÓD` link is érvényes). A kapcsolódás jelzése a nyilvános ntfy.sh-n megy (fiók nélkül, csak a kapcsolódáskor), a játszma ezután közvetlenül a két eszköz között zajlik (WebRTC).
+- **Állásszerkesztő:** Puzzle fül → *Állásszerkesztő*. Bábulerakás, törlés (🗑), áthelyezés (✥), tábla ürítése, alapállás, ki következik, sáncolási jogok, FEN másolása / betöltése, majd indítás a gép ellen vagy két játékossal, tetszőleges variánssal (normál, Király a hegyen, Három sakk, Atomi, Ködös). Indítás előtt ellenőrzi az állást (egy-egy király, gyalog a szélső soron, a nem soron lévő fél nincs sakkban).
+
+
+## Egyedi játékmódok (Beállítások → Variáns)
+
+- **Időugrás:** minden 10. lépés (fél-lépés) után a tábla minden bábuja egy sort csúszik a saját előre / hátra irányába (felváltva), ha a cél üres. Ha két bábu ugyanarra a mezőre csúszna, egyik sem mozdul, a gyalog nem csúszik az 1. / 8. sorra, az ugrás elmarad, ha a lépő fél királya sakkba kerülne. A tábla alatt visszaszámláló mutatja a következő ugrást. A gép tudja a szabályt.
+- **Vak-zóna:** a Ködös sakk változata: a saját térfeled (az első 4 sor), a bábuid és az általuk elérhető / támadott mezők látszanak, az ellenfél hátsó sorai nem. Egy gépen átadó képernyő van.
+- **Túlélő mód (hullámok):** egyjátékos. Egy alapcsapattal (király, 3 gyalog, huszár, futó) védekezel az ellenséges hullámok ellen. Egy hullám akkor ér véget, ha minden ellenséges bábut leütöttél (vagy az ellenséges királyt mattoltad). Utána 3 véletlen bábu közül választasz egyet jutalmul, majd erősebb és nagyobb hullám jön erősebb gép-szinttel. A futam akkor ér véget, ha mattot kapsz. A legjobb eredmény mentődik. Nem értékelt, nincs visszavonás és mentés.
+
+
+## További egyedi változatok (Beállítások → Variáns)
+
+- **Lélekvándorlás:** ütés után az ütő bábu a következő lépésedre az áldozat mozgását kapja (lila aura + a kölcsönzött bábu jele), majd visszaváltozik. A kölcsönzött képesség sakkot is adhat, és a gép is használja. Gyalog kölcsönzött képességgel nem léphet az alap- / ellenfél alapsorra.
+- **Gravitációs sakk:** minden lépés után az összes bábu balra csúszik (az a-vonal felé), amíg bábu vagy a tábla széle meg nem állítja. Sáncolás és en passant nincs, a csúszás animált.
+- **Kráter-sakk:** minden ütés helye 3 lépésig kráterré válik (lila gödör, a hátralévő körökkel): nem léphetsz rá, és a futó / bástya / vezér nem tud átmenni rajta (a sakkot is blokkolja).
+- **Királyi testőrség:** nincs sakk és matt, a király leüthető. Mindkét fél VIP-je a vezére (arany korona). Nyer, aki a VIP-jét az ellenfél alapsorára juttatja, vagy leüti az ellenfél VIP-jét.
+- **Időzített bomba:** mindkét félnek egy véletlen bábuján 5 körös bomba ül (💣). Ha a hordozóval ütsz, a számláló újraindul, ha új saját bábu mellé lépsz vele, átadod neki a bombát (újraindul), különben az 5. lépés végén felrobban a 3×3-as területen (a királyok kivételével, a sajátokat is viszi). Az ellenfél hordozóját leütve hatástalanítod. Online is szinkronban indul.
+- **Tükör-sakk:** minden harmadik fél-lépésnél (3., 6., 9., … felváltva világos és sötét) ugyanolyan típusú bábuval kell lépned, mint amilyennel az ellenfél az előző lépésben lépett, ha van ilyen szabályos lépésed.
