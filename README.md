@@ -73,3 +73,9 @@ Mind a négy működik a gép ellen és online szobában is, nem értékelt ját
 - **Királyi testőrség:** nincs sakk és matt, a király leüthető. Mindkét fél VIP-je a vezére (arany korona). Nyer, aki a VIP-jét az ellenfél alapsorára juttatja, vagy leüti az ellenfél VIP-jét.
 - **Időzített bomba:** mindkét félnek egy véletlen bábuján 5 körös bomba ül (💣). Ha a hordozóval ütsz, a számláló újraindul, ha új saját bábu mellé lépsz vele, átadod neki a bombát (újraindul), különben az 5. lépés végén felrobban a 3×3-as területen (a királyok kivételével, a sajátokat is viszi). Az ellenfél hordozóját leütve hatástalanítod. Online is szinkronban indul.
 - **Tükör-sakk:** minden harmadik fél-lépésnél (3., 6., 9., … felváltva világos és sötét) ugyanolyan típusú bábuval kell lépned, mint amilyennel az ellenfél az előző lépésben lépett, ha van ilyen szabályos lépésed.
+
+
+## Reversi-sakk és Biliárd-sakk
+
+- **Reversi-sakk:** ha egy lépéssel (vagy ütéssel) ellenséges tiszteket (huszár, futó, bástya, vezér) két saját bábud közé szorítasz egy vonalon (sor, oszlop, átló), azok **átállnak a te színedre** (kék szilánkos átfordulás). A gyalog és a király nem fordítható, és ha egy sorban gyalog vagy király áll, vagy rés van, vagy a sor a tábla szélén ér véget, nincs átfordítás. Az átfordítás sakkot is feloldhat, a sáncjog elvész, ha a sarokbástya átáll.
+- **Biliárd-sakk:** minden ütésnél a célmező szomszédos bábui (a királyok kivételével, a sajátjaid is) **egy mezővel távolodnak** az ütés helyétől, ha oda szabad a mező. A tábla szélén túlra lökött bábu **leesik**. Gyalog nem lökődik az alap- vagy ellenfél alapsorra. Az ütő bábu marad a helyén, lökéshullám-gyűrűvel.
