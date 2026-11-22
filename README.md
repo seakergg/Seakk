@@ -54,7 +54,7 @@ Mind a négy működik a gép ellen és online szobában is, nem értékelt ját
 
 ## Linkes meghívó és állásszerkesztő
 
-- **Meghívó link:** Online fül → *Szoba nyitása* után a **Meghívó link** gomb a megosztó menüt nyitja (vagy vágólapra másol): `…/index.html?invite=KÓD`. A linkre kattintva a másik fél automatikusan a szobához csatlakozik, másolgatás nélkül (a régi `#r=KÓD` link is érvényes). A kapcsolódás jelzése a nyilvános ntfy.sh-n megy (fiók nélkül, csak a kapcsolódáskor), a játszma ezután közvetlenül a két eszköz között zajlik (WebRTC).
+- **Meghívó link:** Online fül → *Szoba nyitása* után a **Meghívó link** gomb a megosztó menüt nyitja (vagy vágólapra másol): `…/index.html?invite=KÓD`. A linkre kattintva a másik fél automatikusan a szobához csatlakozik, másolgatás nélkül (a régi `#r=KÓD` link is érvényes). Minden üzenet (csatlakozás, lépések, minijátékok) a nyilvános ntfy.sh csatornán át megy, fiók nélkül. Nincs szükség közvetlen hálózati kapcsolatra, ezért mobilnet és tűzfal mögött is működik. A szoba 10 percig nyitva marad, a kilépés jelzése automatikus.
 - **Állásszerkesztő:** Puzzle fül → *Állásszerkesztő*. Bábulerakás, törlés (🗑), áthelyezés (✥), tábla ürítése, alapállás, ki következik, sáncolási jogok, FEN másolása / betöltése, majd indítás a gép ellen vagy két játékossal, tetszőleges variánssal (normál, Király a hegyen, Három sakk, Atomi, Ködös). Indítás előtt ellenőrzi az állást (egy-egy király, gyalog a szélső soron, a nem soron lévő fél nincs sakkban).
 
 
@@ -79,3 +79,22 @@ Mind a négy működik a gép ellen és online szobában is, nem értékelt ját
 
 - **Reversi-sakk:** ha egy lépéssel (vagy ütéssel) ellenséges tiszteket (huszár, futó, bástya, vezér) két saját bábud közé szorítasz egy vonalon (sor, oszlop, átló), azok **átállnak a te színedre** (kék szilánkos átfordulás). A gyalog és a király nem fordítható, és ha egy sorban gyalog vagy király áll, vagy rés van, vagy a sor a tábla szélén ér véget, nincs átfordítás. Az átfordítás sakkot is feloldhat, a sáncjog elvész, ha a sarokbástya átáll.
 - **Biliárd-sakk:** minden ütésnél a célmező szomszédos bábui (a királyok kivételével, a sajátjaid is) **egy mezővel távolodnak** az ütés helyétől, ha oda szabad a mező. A tábla szélén túlra lökött bábu **leesik**. Gyalog nem lökődik az alap- vagy ellenfél alapsorra. Az ütő bábu marad a helyén, lökéshullám-gyűrűvel.
+
+
+## A tíz további változat (Beállítások → Variáns)
+
+- **Henger:** az a- és a h-vonal összeér, a bábuk (futó, bástya, vezér, király, huszár, gyalogütés) átlépnek a szélen. A sakk és az ütés is körbeér.
+- **Királyjelölt:** mindkét félnek van örököse (a király előtti gyalog, 👑). Matt esetén a király lekerül, és az örökös megkoronázódik a saját mezőjén, a játék folytatódik. Csak a második matt dönt. Az örökös leütése (vagy előlépése) elveszi a „második életet”.
+- **Dagály:** a víz mindkét oldalról árad (a- és h-vonal), 4 fél-lépésenként változik az árszint (0→1→2→3→2→1→0). Az elöntött mezőn a bábuk megfagynak és nem üthetők, futó / bástya / vezér / gyalog nem léphet rájuk és nem mehet át rajtuk, a huszár és a király üres elöntött mezőre léphet. Sáncolni dagálykor nem lehet.
+- **Forgó tábla:** minden 6. fél-lépés után a tábla 90°-kal elfordul az óramutató irányába (a gyalogok iránya nem változik). A forgatással a végsorra került gyalog vezérré lép elő, a sáncjogok elvesznek, és ha a forgatás a lépő fél királyát sakkba tenné, elmarad.
+- **Ikerbábuk:** mindkét félnél négy bábupár (azonos színű pont és összekötő vonal jelzi). Ha egyiket leütik, a párja is elvész. A párosítás mindkét félnél tükrözött, tehát méltányos.
+- **Szintlépés-sakk:** minden ütés után az ütő bábu egy szintet lép (♟→♞→♝→♜→♛). Gyalog a végsoron csak huszárrá lép elő.
+- **Földrengés:** minden 5. fél-lépés után egy sor vagy oszlop körbecsúszik egy mezővel, a következő rengés helye és iránya előre látszik. A végsorra csúszott gyalog vezér lesz, a rengés elmarad, ha a lépő fél királyát sakkba tenné.
+- **Árverés-sakk:** mindkét félnek 5 pénze van (+1 minden ütésért). 3 pénzért egy lépés után még egyet léphetsz (HUD-gomb). A fizetett első lépés nem adhat sakkot, és közvetlenül egymás után nem lehet kétszer fizetni. A gép is él vele. (Nincs titkos licit.)
+- **Maszkabál:** mindkét fél hátsó sorának bábui (a király kivételével) véletlenül megkeverve állnak. Az ellenfél bábuit „?” korong rejti, amíg nem lépnek, nem ütnek vagy nem esnek el. Egy gépen átadó képernyő van, tipp nincs. Emberek ellen az igazi (a gép mindent lát).
+- **Szabály-rulett:** minden 8. fél-lépésnél másik szabály lép életbe a következők közül: atomi, gravitáció, időugrás, tükör, Reversi, biliárd, lélekvándorlás, kráter, szintlépés, földrengés, forgó tábla, dagály, henger. A következő szabály előre látszik, a váltást felirat jelzi. A játszma az első 8 fél-lépésben normál sakk.
+
+
+## Hatszögsakk
+
+A hatszögtábla közepe nem üres: a gyűrűk pókhálóként összeérnek a középpontban (a belső gyűrű mezői háromszögek).

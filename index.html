@@ -99,6 +99,9 @@ select{text-overflow:ellipsis}
 .row>*{min-width:0}
 .dd,.pn,section{max-width:100%;box-sizing:border-box}
 select{width:100%}.row>select{width:100%;flex:1 1 0}html,body{overflow-x:clip}
+.pc.froz{filter:saturate(.35) brightness(.85) drop-shadow(0 0 6px #4fd8ff)}.pc.heir{filter:drop-shadow(0 0 6px #ffd54acc)}
+@keyframes tdw{from{opacity:.55}to{opacity:.95}}@keyframes qkp{from{box-shadow:inset 0 0 0 0 #ff4d1f}to{box-shadow:inset 0 0 22px 2px #ff4d1f}}
+#aucb{padding:4px 10px;border-radius:8px;margin-left:8px}#aucb.on{outline:2px solid #ffd54a;background:#7a5b00aa}
 .pc.soul{filter:drop-shadow(0 0 7px #c77dff) drop-shadow(0 0 14px #7b2bff)}.pc.vip{filter:drop-shadow(0 0 7px #ffd54a) drop-shadow(0 0 12px #ffb300)}.pc.bomb{animation:bmp .6s infinite alternate}
 @keyframes bmp{from{filter:drop-shadow(0 0 3px #ff4d1f)}to{filter:drop-shadow(0 0 12px #ff4d1f) brightness(1.3)}}
 .sq.crater{background-image:radial-gradient(circle,#000 20%,#3b0b6b 62%,transparent 76%)!important;box-shadow:inset 0 0 0 2px #7b2bff88,inset 0 0 16px #000}
@@ -125,7 +128,7 @@ select{width:100%}.row>select{width:100%;flex:1 1 0}html,body{overflow-x:clip}
 <section id="ts" hidden>
 <details class="dd" open><summary>ELLENFÉL</summary><div class="row"><select id="lv"></select><select id="col"><option value="1">Világos</option><option value="-1">Sötét</option><option value="0">Véletlen</option></select></div>
 <div class="row"><select id="md"><option value="ai">Játékmód: gép ellen</option><option value="duo">Két játékos, egy készüléken</option></select></div>
-<div class="row"><div class="mu" style="margin:4px 0 2px;flex:0 0 100%">Variáns / hendikep</div><select id="vr"><option value="n">Normál sakk</option><option value="960">Chess960</option><option value="tp">Teleport sakk</option><option value="koth">Király a hegyen</option><option value="3chk">Három sakk</option><option value="atom">Atomi sakk</option><option value="fog">Ködös sakk</option><option value="blind">Vak-zóna</option><option value="tt">Időugrás</option><option value="soul">Lélekvándorlás</option><option value="grav">Gravitációs sakk</option><option value="crater">Kráter-sakk</option><option value="vip">Királyi testőrség</option><option value="bomb">Időzített bomba</option><option value="mirror">Tükör-sakk</option><option value="rev">Reversi-sakk</option><option value="bill">Biliárd-sakk</option><option value="surv">Túlélő mód (hullámok)</option><option value="hq">Gép vezér nélkül</option><option value="hr">Gép bástya nélkül</option><option value="hn">Gép huszár nélkül</option><option value="hp">Gép f-gyalog nélkül</option><option value="Hq">Én vezér nélkül</option><option value="Hr">Én bástya nélkül</option><option value="Hn">Én huszár nélkül</option><option value="Hp">Én f-gyalog nélkül</option><option value="hex">Hatszögsakk (3 játékos)</option></select></div>
+<div class="row"><div class="mu" style="margin:4px 0 2px;flex:0 0 100%">Variáns / hendikep</div><select id="vr"><option value="n">Normál sakk</option><option value="960">Chess960</option><option value="tp">Teleport sakk</option><option value="koth">Király a hegyen</option><option value="3chk">Három sakk</option><option value="atom">Atomi sakk</option><option value="fog">Ködös sakk</option><option value="blind">Vak-zóna</option><option value="tt">Időugrás</option><option value="soul">Lélekvándorlás</option><option value="grav">Gravitációs sakk</option><option value="crater">Kráter-sakk</option><option value="vip">Királyi testőrség</option><option value="bomb">Időzített bomba</option><option value="mirror">Tükör-sakk</option><option value="rev">Reversi-sakk</option><option value="bill">Biliárd-sakk</option><option value="cyl">Henger</option><option value="heir">Királyjelölt</option><option value="tide">Dagály</option><option value="rot">Forgó tábla</option><option value="twin">Ikerbábuk</option><option value="lvl">Szintlépés-sakk</option><option value="quake">Földrengés</option><option value="auc">Árverés-sakk</option><option value="mask">Maszkabál</option><option value="chaos">Szabály-rulett</option><option value="surv">Túlélő mód (hullámok)</option><option value="hq">Gép vezér nélkül</option><option value="hr">Gép bástya nélkül</option><option value="hn">Gép huszár nélkül</option><option value="hp">Gép f-gyalog nélkül</option><option value="Hq">Én vezér nélkül</option><option value="Hr">Én bástya nélkül</option><option value="Hn">Én huszár nélkül</option><option value="Hp">Én f-gyalog nélkül</option><option value="hex">Hatszögsakk (3 játékos)</option></select></div>
 <div class="mu" id="vrd"></div>
 <div class="row"><select id="eng"></select><select id="tm"><option value=".5">Gyors</option><option value="1" selected>Normál idő</option><option value="2">Lassú</option><option value="4">Mély</option></select></div><div id="ed" class="mu"></div></details>
 <details class="dd"><summary>SAKKÓRA</summary><div class="row"><select id="tc"><option value="0">Nincs óra</option><option value="3,0">3 perc</option><option value="3,2">3+2</option><option value="5,0">5 perc</option><option value="5,3">5+3</option><option value="10,0">10 perc</option><option value="10,5">10+5</option><option value="15,10">15+10</option></select></div></details>
@@ -169,7 +172,7 @@ select{width:100%}.row>select{width:100%;flex:1 1 0}html,body{overflow-x:clip}
 <div class="row"><select id="lt"><option value="3,2">3+2</option><option value="5,3">5+3</option><option value="10,0" selected>10 perc</option><option value="15,10">15+10</option></select><button id="lis">Játék keresése</button></div>
 <div class="row"><input id="lu" placeholder="Lichess-felhasználónév"><button id="lic">Kihívás</button><button id="lfa">＋ Barát</button></div></details>
 <details class="dd" open><summary>BARÁTOK</summary><div id="frl" class="mu"></div></details>
-<details class="dd" open><summary>BARÁTI SZOBA (RÖVID KÓD)</summary><div class="mu">Az egyik játékos szobát nyit, a másik beírja az 5 jegyű kódot (vagy megnyitja a linket). Fiók és bejelentkezés nélkül, a játék közvetlenül a két eszköz között zajlik.</div>
+<details class="dd" open><summary>BARÁTI SZOBA (RÖVID KÓD)</summary><div class="mu">Az egyik játékos szobát nyit, a másik beírja az 5 jegyű kódot (vagy megnyitja a linket). Fiók és bejelentkezés nélkül. Az üzenetek a nyilvános ntfy.sh csatornán át mennek, ezért mobilnet és tűzfal mögött is működik.</div>
 <div class="row"><button id="rmn">Szoba nyitása</button></div>
 <div id="rmo" hidden><div id="rmk" style="font-size:32px;letter-spacing:.3em;font-weight:800;text-align:center;color:#4fd8ff;margin:8px 0;text-indent:.3em"></div><div class="row"><button id="rmcp">Kód másolása</button><button id="rml">Meghívó link</button></div></div>
 <div class="row"><input id="rmc" maxlength="5" placeholder="KÓD" autocapitalize="characters" autocomplete="off" spellcheck="false" style="text-transform:uppercase;letter-spacing:.25em;text-align:center"><button id="rmj">Csatlakozás</button></div>
@@ -183,7 +186,7 @@ select{width:100%}.row>select{width:100%;flex:1 1 0}html,body{overflow-x:clip}
 <div class="mu">Sáncolási jogok:</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px"><label><input type="checkbox" id="edr0" checked> O-O ♔</label><label><input type="checkbox" id="edr1" checked> O-O-O ♔</label><label><input type="checkbox" id="edr2" checked> O-O ♚</label><label><input type="checkbox" id="edr3" checked> O-O-O ♚</label></div>
 <div class="row"><input id="edf" readonly style="width:100%;font-size:12px"></div>
 <div class="row"><button id="edcp">FEN másolása</button><button id="edld">FEN betöltése</button></div>
-<div class="row"><select id="edc"><option value="1">Világossal játszom</option><option value="-1">Sötéttel játszom</option><option value="0">Véletlen szín</option></select><select id="edv"><option value="n">Normál sakk</option><option value="koth">Király a hegyen</option><option value="3chk">Három sakk</option><option value="atom">Atomi sakk</option><option value="fog">Ködös sakk</option><option value="blind">Vak-zóna</option><option value="tt">Időugrás</option><option value="soul">Lélekvándorlás</option><option value="grav">Gravitációs sakk</option><option value="crater">Kráter-sakk</option><option value="vip">Királyi testőrség</option><option value="bomb">Időzített bomba</option><option value="mirror">Tükör-sakk</option><option value="rev">Reversi-sakk</option><option value="bill">Biliárd-sakk</option></select></div>
+<div class="row"><select id="edc"><option value="1">Világossal játszom</option><option value="-1">Sötéttel játszom</option><option value="0">Véletlen szín</option></select><select id="edv"><option value="n">Normál sakk</option><option value="koth">Király a hegyen</option><option value="3chk">Három sakk</option><option value="atom">Atomi sakk</option><option value="fog">Ködös sakk</option><option value="blind">Vak-zóna</option><option value="tt">Időugrás</option><option value="soul">Lélekvándorlás</option><option value="grav">Gravitációs sakk</option><option value="crater">Kráter-sakk</option><option value="vip">Királyi testőrség</option><option value="bomb">Időzített bomba</option><option value="mirror">Tükör-sakk</option><option value="rev">Reversi-sakk</option><option value="bill">Biliárd-sakk</option><option value="cyl">Henger</option><option value="heir">Királyjelölt</option><option value="tide">Dagály</option><option value="rot">Forgó tábla</option><option value="twin">Ikerbábuk</option><option value="lvl">Szintlépés-sakk</option><option value="quake">Földrengés</option><option value="auc">Árverés-sakk</option><option value="mask">Maszkabál</option><option value="chaos">Szabály-rulett</option></select></div>
 <div class="row"><button id="edai">Játék a gép ellen</button><button id="eduo">Játék 2 játékossal</button></div><div class="mu">Koppints egy bábura a palettán, majd a mezőkre. 🗑 töröl, ✥ áthelyez. A játszma nem értékelt.</div></section>
 <section id="th" hidden><h4>ELŐZMÉNYEK</h4><div class="row"><button id="hall">Összes játszma PGN-ben</button><button id="hpi">PGN betöltése elemzésre</button></div><div id="hl"></div></section></div></div>
 <nav class="tabs nav"><button data-t="j" class="on"><b>♞</b>Játék</button><button data-t="a"><b>◎</b>Elemzés</button><button data-t="h"><b>☰</b>Előzm.</button><button data-t="z"><b>✦</b>Puzzle</button><button data-t="o"><b>⌁</b>Online</button><button data-t="p"><b>★</b>Profil</button><button data-t="s"><b>⚙</b>Beáll.</button></nav>
@@ -194,27 +197,32 @@ let CF={k:4,q:0,h:7},V960=0;const MK=Array(64).fill(15);function setCF(c,v){CF=c
 const csq=(t,ks)=>{const bs=t>0?56:0;return{rf:bs+(ks?CF.h:CF.q),kt:bs+(ks?6:2),rt:bs+(ks?5:3)}};
 /* ---- szabályok ---- */
 function init(){const b=Array(64).fill(0),o=[4,2,3,5,6,3,2,4];for(let i=0;i<8;i++){b[i]=-o[i];b[8+i]=-1;b[48+i]=1;b[56+i]=o[i]}return{b,t:1,r:15,ep:-1,hm:0,tp:0}}
-function att(b,s,by){const r=s>>3,c=s&7,pr=r+by,ok=(x,y)=>x>=0&&x<8&&y>=0&&y<8;
-if(pr>=0&&pr<8)for(const dc of[-1,1])if(ok(pr,c+dc)&&b[pr*8+c+dc]==by)return 1;
-for(const[d,e]of KN)if(ok(r+d,c+e)&&b[(r+d)*8+c+e]==2*by)return 1;
-for(const[d,e]of KG)if(ok(r+d,c+e)&&b[(r+d)*8+c+e]==6*by)return 1;
-for(const[d,e]of AL){let rr=r+d,cc=c+e;const dg=d&&e;while(ok(rr,cc)){const q=b[rr*8+cc];if(q){if(q*by>0){const a=Math.abs(q);if(a==5||(dg?a==3:a==4))return 1}break}rr+=d;cc+=e}}return 0}
-function gen0(s,caps){const{b,t,r:rt,ep}=s,m=[],ok=(x,y)=>x>=0&&x<8&&y>=0&&y<8;
-const sl=VR=='soul'?slotOf(s,t):0,ssq=sl&63,sty=sl>>6;
+function att(b,s,by){const r=s>>3,c=s&7,pr=r+by,CYL=VR=='cyl',ok=(x,y)=>x>=0&&x<8&&(CYL||(y>=0&&y<8));
+if(pr>=0&&pr<8)for(const dc of[-1,1])if(ok(pr,c+dc)&&b[pr*8+((c+dc)&7)]==by)return 1;
+for(const[d,e]of KN)if(ok(r+d,c+e)&&b[(r+d)*8+((c+e)&7)]==2*by)return 1;
+for(const[d,e]of KG)if(ok(r+d,c+e)&&b[(r+d)*8+((c+e)&7)]==6*by)return 1;
+for(const[d,e]of AL){let rr=r+d,cc=c+e;const dg=d&&e;for(let k=0;k<7&&ok(rr,cc);k++){const q=b[rr*8+(cc&7)];if(q){if(q*by>0){const a=Math.abs(q);if(a==5||(dg?a==3:a==4))return 1}break}rr+=d;cc+=e}}return 0}
+function gen0(s,caps){const{b,t,r:rt,ep}=s,m=[],ok=(x,y)=>x>=0&&x<8&&(CYL||(y>=0&&y<8));
+const CYL=VR=='cyl',sl=VR=='soul'?slotOf(s,t):0,ssq=sl&63,sty=sl>>6;
 for(let f=0;f<64;f++){const p=b[f];if(p*t<=0)continue;const ty0=Math.abs(p),ty=(sty&&f==ssq)?sty:ty0,r=f>>3,c=f&7,n0=m.length;
-if(ty==1){const nr=r-t,pr=(nr==0||nr==7)&&ty0==1,ad=(to,cp,fl)=>{if(pr)for(const q of[5,4,3,2])m.push({f,t:to,cp,p:q});else m.push({f,t:to,cp,fl})};
+if(ty==1){const nr=r-t,pr=(nr==0||nr==7)&&ty0==1,ad=(to,cp,fl)=>{if(pr)for(const q of VR=='lvl'?[2]:[5,4,3,2])m.push({f,t:to,cp,p:q});else m.push({f,t:to,cp,fl})};
 const o=nr*8+c;if(!b[o]){if(!caps||pr)ad(o,0);if(!caps&&r==(t>0?6:1)&&!b[o-8*t])m.push({f,t:o-8*t,cp:0})}
-for(const dc of[-1,1]){const cc=c+dc;if(cc<0||cc>7)continue;const to=nr*8+cc;if(b[to]*t<0)ad(to,b[to]);else if(to==ep)ad(to,1,'e')}}
-else if(ty==2||ty==6){for(const[d,e]of ty==2?KN:KG){const rr=r+d,cc=c+e;if(!ok(rr,cc))continue;const to=rr*8+cc;if(!b[to]){if(!caps)m.push({f,t:to,cp:0})}else if(b[to]*t<0)m.push({f,t:to,cp:b[to]})}
+for(const dc of[-1,1]){if(!CYL&&(c+dc<0||c+dc>7))continue;const to=nr*8+((c+dc)&7);if(b[to]*t<0)ad(to,b[to]);else if(to==ep)ad(to,1,'e')}}
+else if(ty==2||ty==6){for(const[d,e]of ty==2?KN:KG){const rr=r+d,cc=c+e;if(!ok(rr,cc))continue;const to=rr*8+(cc&7);if(!b[to]){if(!caps)m.push({f,t:to,cp:0})}else if(b[to]*t<0)m.push({f,t:to,cp:b[to]})}
 if(ty==6&&ty0==6&&!caps&&f==(t>0?56:0)+CF.k){for(const ks of[1,0]){if(!(rt&(t>0?(ks?1:2):(ks?4:8))))continue;const z=csq(t,ks),b2=b.slice();b2[f]=0;b2[z.rf]=0;let ok=b[z.rf]==4*t;
 for(let x=Math.min(f,z.kt);x<=Math.max(f,z.kt);x++){if(b[x]&&x!=f&&x!=z.rf)ok=0;if(VR!='vip'&&att(b2,x,-t))ok=0}
 for(let x=Math.min(z.rf,z.rt);x<=Math.max(z.rf,z.rt);x++)if(b[x]&&x!=f&&x!=z.rf)ok=0;
 if(ok)m.push({f,t:V960?z.rf:z.kt,cp:0,fl:'c'})}}}
-else for(const[d,e]of ty==3?DG:ty==4?ST:AL){let rr=r+d,cc=c+e;while(ok(rr,cc)){const to=rr*8+cc;if(!b[to]){if(!caps)m.push({f,t:to,cp:0})}else{if(b[to]*t<0)m.push({f,t:to,cp:b[to]});break}rr+=d;cc+=e}}
+else for(const[d,e]of ty==3?DG:ty==4?ST:AL){let rr=r+d,cc=c+e;for(let kk=0;kk<7&&ok(rr,cc);kk++){const to=rr*8+(cc&7);if(!b[to]){if(!caps)m.push({f,t:to,cp:0})}else{if(b[to]*t<0)m.push({f,t:to,cp:b[to]});break}rr+=d;cc+=e}}
 if(sty&&f==ssq){const keep=[];for(let i=n0;i<m.length;i++){const x=m[i];if(ty0==1&&ty!=1&&((x.t>>3)==0||(x.t>>3)==7))continue;x.bw=ty!=ty0?1:0;keep.push(x)}m.length=n0;for(const x of keep)m.push(x)}}
 return m}
-function gen(s,caps){const m=gen0(s,caps);return VR=='crater'&&s.cr&&s.cr.length?cfilt(s,m):m}
-function mk(s,m){const b=s.b.slice(),p=b[m.f],ty=Math.abs(p);let ep=-1,hm=s.hm+1;if(m.cp||ty==1)hm=0;
+function gen(s,caps){let m=gen0(s,caps);
+if(VR=='crater'&&s.cr&&s.cr.length)m=cfilt(s,m);
+else if(VR=='tide')m=tfilt(s,m);
+else if(VR=='cyl'){const seen=new Set();m=m.filter(x=>{const k=(x.f*64+x.t)*8+(x.p|0);if(seen.has(k))return false;seen.add(k);return true})}
+else if(VR=='auc'&&!caps){const co=coOf(s),mine=s.t>0?co&15:co>>4;if(mine>=AUCC&&!s.dm){const add=[];for(const x of m)if(x.fl!='c')add.push(Object.assign({},x,{pay:1}));m=m.concat(add)}}
+return m}
+function mk(s,m){if(RLR)VR=ruleOf(s);const b=s.b.slice(),p=b[m.f],ty=Math.abs(p);let ep=-1,hm=s.hm+1;if(m.cp||ty==1)hm=0;
 b[m.t]=m.p?m.p*s.t:p;b[m.f]=0;if(m.fl=='e')b[m.t+8*s.t]=0;
 if(m.fl=='c'){const z=csq(s.t,m.t>m.f);b[m.f]=0;b[z.rf]=0;b[z.kt]=6*s.t;b[z.rt]=4*s.t}
 if(ty==1&&!m.fl&&Math.abs(m.t-m.f)==16)ep=(m.f+m.t)/2;
@@ -222,7 +230,8 @@ if(VR=='atom'&&(m.cp||m.fl=='e'))xpl(b,m.t);let ck=s.ck|0;if(VR=='3chk'&&hot(b,-
 let nr=s.r&MK[m.f]&MK[m.t],sh=null;const pc=(s.pc|0)+1;
 if(VR=='tt'&&pc%10==0){const mv=tsh(b,(pc/10)&1?1:-1);if(mv.length){const nb=b.slice();for(let i=0;i<mv.length;i+=2)nb[mv[i]]=0;for(let i=0;i<mv.length;i+=2)nb[mv[i+1]]=b[mv[i]];
 if(!hot(nb,s.t)){for(let i=0;i<64;i++)b[i]=nb[i];sh=mv;ep=-1;if(!(b[60]==6&&b[63]==4))nr&=~1;if(!(b[60]==6&&b[56]==4))nr&=~2;if(!(b[4]==-6&&b[7]==-4))nr&=~4;if(!(b[4]==-6&&b[0]==-4))nr&=~8}}}
-let sv=s.sv,cr=s.cr,vi=s.vi,bm=s.bm,lt=s.lt,ex=-1,rv=null,pf=null;
+let sv=s.sv,cr=s.cr,vi=s.vi,bm=s.bm,lt=s.lt,ex=-1,rv=null,pf=null,tw=s.tw,tv=-1,hr=s.hr,cw=null,mq=s.mq,coN=s.co,dm=0,pq=null;
+if(RLR)lt=ty;
 if(VR){const cap=m.cp||m.fl=='e';
 if(VR=='soul'){let ws=(sv|0)&511,bs=(sv|0)>>9;if(s.t>0)ws=0;else bs=0;if(cap){const sl=m.t+64*(m.fl=='e'?1:Math.abs(m.cp));if(s.t>0)ws=sl;else bs=sl}sv=ws|(bs<<9)}
 else if(VR=='grav'){const g=gsl(b);if(g.length)sh=g;ep=-1;nr=0}
@@ -230,6 +239,23 @@ else if(VR=='crater'){const nc=[];if(cr)for(let i=0;i<cr.length;i+=2)if(cr[i+1]>
 else if(VR=='vip'){if(vi==null)vi=vipInit(s.b);let w=vi&127,bl=vi>>7;const cs=m.fl=='e'?m.t+8*s.t:m.t,dst=m.fl=='c'?csq(s.t,m.t>m.f).kt:m.t;
 if(s.t>0){if(w==m.f+1)w=dst+1;if(cap&&bl==cs+1)bl=0}else{if(bl==m.f+1)bl=dst+1;if(cap&&w==cs+1)w=0}vi=w|(bl<<7)}
 else if(VR=='mirror')lt=ty;
+else if(VR=='twin'&&tw){tw=tw.slice();const cs=m.fl=='e'?m.t+8*s.t:m.t,dst=m.fl=='c'?csq(s.t,m.t>m.f).kt:m.t;
+if(cap){const i=tw.indexOf(cs);if(i>=0){const j=i^1,tq=tw[j];if(tq>=0){b[tq]=0;nr&=MK[tq];tv=tq}tw[i]=-1;tw[j]=-1}}
+for(let i=0;i<tw.length;i++)if(tw[i]==m.f)tw[i]=dst}
+else if(VR=='heir'){const hv=hr==null?hrInit(s.b):hr;let w=hv&127,bl=hv>>7;const cs=m.fl=='e'?m.t+8*s.t:m.t,dst=m.fl=='c'?csq(s.t,m.t>m.f).kt:m.t;
+if(s.t>0){if(w==m.f+1)w=m.p?0:dst+1;if(cap&&bl==cs+1)bl=0}else{if(bl==m.f+1)bl=m.p?0:dst+1;if(cap&&w==cs+1)w=0}
+hr=w|(bl<<7);const o=-s.t,slot=o>0?w:bl;
+if(slot&&!HNEST&&hot(b,o)){const ns={b:b.slice(),t:o,r:nr,ep,hm,pc,hr};HNEST=1;let none;try{none=!legal(ns).length}finally{HNEST=0}if(none){const kq=b.indexOf(6*o),hq=slot-1;b[kq]=0;b[hq]=6*o;if(o>0)w=0;else bl=0;hr=w|(bl<<7);nr&=o>0?~3:~12;cw=[kq,hq];ep=-1}}}
+else if(VR=='rot'&&pc%6==0){const nb=Array(64).fill(0),mv=[];for(let r=0;r<8;r++)for(let c=0;c<8;c++){const f=r*8+c,q=b[f];if(!q)continue;const to=c*8+(7-r);nb[to]=q;mv.push(f,to)}
+const pp=[];for(let c=0;c<8;c++){if(nb[c]==1){nb[c]=5;pp.push(c)}if(nb[56+c]==-1){nb[56+c]=-5;pp.push(56+c)}}
+if(!hot(nb,s.t)){for(let i=0;i<64;i++)b[i]=nb[i];sh=mv;if(pp.length)pq=pp;ep=-1;nr=0}}
+else if(VR=='quake'&&pc%5==0){const q=qkS(pc/5,s.sd),ln=[];for(let i=0;i<8;i++)ln.push(q.row?q.idx*8+i:i*8+q.idx);const nb=b.slice(),mv=[];
+for(let i=0;i<8;i++){const f=ln[i],to=ln[(i+q.dir+8)%8];nb[to]=b[f];if(b[f]&&f!=to)mv.push(f,to)}
+const pp=[];for(let c=0;c<8;c++){if(nb[c]==1){nb[c]=5;pp.push(c)}if(nb[56+c]==-1){nb[56+c]=-5;pp.push(56+c)}}
+if(mv.length&&!hot(nb,s.t)){for(let i=0;i<64;i++)b[i]=nb[i];sh=mv;if(pp.length)pq=pp;ep=-1;for(let i=0;i<mv.length;i+=2)nr&=MK[mv[i]]}}
+else if(VR=='lvl'&&cap){const cur=Math.abs(b[m.t]);if(cur<5)b[m.t]=(cur+1)*s.t}
+else if(VR=='auc'){const co=coOf(s);let w=co&15,bl=co>>4;if(m.pay){if(s.t>0)w-=AUCC;else bl-=AUCC}if(cap){if(s.t>0)w=Math.min(15,w+1);else bl=Math.min(15,bl+1)}coN=w|(bl<<4);dm=m.pay?1:0}
+else if(VR=='mask'&&mq){mq=mq.slice();const cs=m.fl=='e'?m.t+8*s.t:m.t;mqClr(mq,m.f);if(cap)mqClr(mq,cs);if(m.fl=='c')mqClr(mq,csq(s.t,m.t>m.f).rf)}
 else if(VR=='rev'){const o=s.t,q0=m.fl=='c'?csq(s.t,m.t>m.f).kt:m.t,r0=q0>>3,c0=q0&7,fl=[];
 for(const[dr,dc]of[[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]]){let r=r0+dr,c=c0+dc;const run=[];
 while(r>=0&&r<8&&c>=0&&c<8){const q=b[r*8+c];if(q*o<0){const a=Math.abs(q);if(a==1||a==6){run.length=0;break}run.push(r*8+c)}else if(q*o>0)break;else{run.length=0;break}r+=dr;c+=dc}
@@ -249,13 +275,13 @@ const before=new Set(nb(o0).filter(i=>s.b[i]*s.t>0));let bi=-1,bv=0;for(const i 
 if(bi>=0){sq=bi;tm=5}else tm--}
 else tm--;
 if(tm<=0){ex=sq;xplb(b,sq);bm[si]=-1;bm[si+1]=0;if(bm[oi]>=0&&b[bm[oi]]*(oi?-1:1)<=0){bm[oi]=-1;bm[oi+1]=0}}else{bm[si]=sq;bm[si+1]=tm}}}}
-return{b,t:-s.t,r:nr,ep,hm,tp:(s.tp|0)|(m.fl=='t'?(s.t>0?1:2):0),ck,pc,sh,sv,cr,vi,bm,lt,ex,rv,pf}}
+return{b,t:m.pay?s.t:-s.t,r:nr,ep,hm,tp:(s.tp|0)|(m.fl=='t'?(s.t>0?1:2):0),ck,pc,sh,sv,cr,vi,bm,lt,ex,rv,pf,tw,tv,hr,cw,mq,co:coN,dm,pq,sd:s.sd}}
 let VR='';const kp=(b,t)=>b.indexOf(6*t);
 const adj=(a,b)=>a>=0&&b>=0&&Math.abs((a>>3)-(b>>3))<2&&Math.abs((a&7)-(b&7))<2;
-const hot=(b,t)=>{if(VR=='vip')return false;const k=b.indexOf(6*t);if(k<0)return false;if(VR=='crater'&&CRC&&CRC.length)return crhot(b,t);if(VR=='atom'){const o=b.indexOf(-6*t);if(o>=0&&adj(k,o))return false}return att(b,k,-t)};
-const inchk=(s,t=s.t)=>{CRC=s.cr||null;return hot(s.b,t)||(VR=='soul'&&sh2(s,t))};
-const safe=(s,n)=>{if(VR=='atom'){if(n.b.indexOf(6*s.t)<0)return false;if(n.b.indexOf(-6*s.t)<0)return true}CRC=n.cr||null;return!(hot(n.b,s.t)||(VR=='soul'&&sh2(n,s.t)))};
-const vw=s=>{if(VR=='koth'){const b=s.b;if(b[27]==6||b[28]==6||b[35]==6||b[36]==6)return 1;if(b[27]==-6||b[28]==-6||b[35]==-6||b[36]==-6)return -1}
+const hot=(b,t)=>{if(VR=='vip')return false;if(VR=='tide')return tdhot(b,t);const k=b.indexOf(6*t);if(k<0)return false;if(VR=='crater'&&CRC&&CRC.length)return crhot(b,t);if(VR=='atom'){const o=b.indexOf(-6*t);if(o>=0&&adj(k,o))return false}return att(b,k,-t)};
+const inchk=(s,t=s.t)=>{if(RLR)VR=ruleOf(s);CRC=s.cr||null;TPC=s.pc|0;return hot(s.b,t)||(VR=='soul'&&sh2(s,t))};
+const safe=(s,n)=>{if(RLR)VR=ruleOf(s);if(VR=='auc'&&n.t==s.t&&hot(n.b,-s.t))return false;if(VR=='atom'){if(n.b.indexOf(6*s.t)<0)return false;if(n.b.indexOf(-6*s.t)<0)return true}CRC=n.cr||null;TPC=n.pc|0;return!(hot(n.b,s.t)||(VR=='soul'&&sh2(n,s.t)))};
+const vw=s=>{if(RLR){if(s.b.indexOf(6)<0)return -1;if(s.b.indexOf(-6)<0)return 1}if(VR=='koth'){const b=s.b;if(b[27]==6||b[28]==6||b[35]==6||b[36]==6)return 1;if(b[27]==-6||b[28]==-6||b[35]==-6||b[36]==-6)return -1}
 else if(VR=='atom'){if(s.b.indexOf(6)<0)return -1;if(s.b.indexOf(-6)<0)return 1}
 else if(VR=='3chk'){const c=s.ck|0;if((c&3)>=3)return 1;if(c>>2>=3)return -1}
 else if(VR=='vip'){const vi=s.vi==null?vipInit(s.b):s.vi,w=vi&127,bl=vi>>7;if(!w)return -1;if(!bl)return 1;if((w-1)>>3==0)return 1;if((bl-1)>>3==7)return -1}return 0};
@@ -275,8 +301,25 @@ function xplb(b,q){for(let dr=-1;dr<2;dr++)for(let dc=-1;dc<2;dc++){const r=(q>>
 const mact=s=>{const lt=s.lt|0;return lt&&(((s.pc|0)+1)%3==0)?lt:0};
 const mfilt=(s,l)=>{const lt=mact(s);if(lt){const f=l.filter(m=>Math.abs(s.b[m.f])==lt);if(f.length)return f}return l};
 function mrest(s){const lt=mact(s);if(!lt)return 0;for(const m of gen(s))if(Math.abs(s.b[m.f])==lt&&safe(s,mk(s,m)))return lt;return 0}
-function hx2(s){let h=0;if(s.cr)for(let i=0;i<s.cr.length;i+=2)h+=(s.cr[i]+1)*(s.cr[i+1]+3)*7907;if(s.bm)for(let i=0;i<4;i++)h+=(s.bm[i]+2)*(i+5)*6577;return h}
-const legal=s=>{const l=gen(s).filter(m=>safe(s,mk(s,m)));return VR=='mirror'?mfilt(s,l):l};
+function hx2(s){let h=0;if(s.cr)for(let i=0;i<s.cr.length;i+=2)h+=(s.cr[i]+1)*(s.cr[i+1]+3)*7907;if(s.bm)for(let i=0;i<4;i++)h+=(s.bm[i]+2)*(i+5)*6577;
+if(s.tw)for(let i=0;i<s.tw.length;i++)h+=(s.tw[i]+2)*(i+9)*7001;if(s.mq)h+=(s.mq[0]%100003)*13+(s.mq[1]%100003)*17;h+=(s.hr|0)*3331+(s.co==null?0:s.co*2909)+(s.dm|0)*1021;return h}
+let RLR=0,TPC=0,HNEST=0;const AUCC=3,RLP=['atom','grav','tt','mirror','rev','bill','soul','crater','lvl','quake','rot','tide','cyl'],PCV=new Set(['tt','tide','rot','quake','mirror']);
+const hs32=x=>{x=(x^(x>>>16))>>>0;x=Math.imul(x,2246822519)>>>0;x=(x^(x>>>13))>>>0;x=Math.imul(x,3266489917)>>>0;return(x^(x>>>16))>>>0};
+const ridx=(sd,k)=>{const n=RLP.length;let i=hs32((sd|0)+k*7919)%n;if(k>1&&i==hs32((sd|0)+(k-1)*7919)%n)i=(i+1)%n;return i};
+const ruleK=(sd,k)=>k<1?'':RLP[ridx(sd,k)];
+const ruleOf=s=>RLR?ruleK(s.sd,(s.pc|0)>>3):VR;
+const pcx=s=>RLR?(s.pc|0):(PCV.has(VR)?(s.pc|0)%120:0);
+const qkS=(j,sd)=>{const x=hs32((sd|0)*31+j*104729);return{row:x&1,idx:(x>>>1)%8,dir:(x>>>4)&1?1:-1}};
+const tdLvl=pc=>[0,1,2,3,2,1][((pc|0)>>2)%6];
+const coOf=s=>s.co==null?85:s.co;
+const mqHas=(mq,q)=>mq&&(q<32?(mq[0]>>>q)&1:(mq[1]>>>(q-32))&1);
+const mqClr=(mq,q)=>{if(q<32)mq[0]=(mq[0]&~(1<<q))>>>0;else mq[1]=(mq[1]&~(1<<(q-32)))>>>0};
+function hrInit(b){const f=t=>{const k=b.indexOf(6*t);if(k<0)return -1;const o=k-8*t;if(o>=0&&o<64&&b[o]==t)return o;let best=-1,bd=99;for(let i=0;i<64;i++)if(b[i]==t){const d=Math.max(Math.abs((i>>3)-(k>>3)),Math.abs((i&7)-(k&7)));if(d<bd){bd=d;best=i}}return best};return(f(1)+1)|((f(-1)+1)<<7)}
+function tfilt(s,m){const L=tdLvl(s.pc);if(!L)return m;const fl=q=>{const c=q&7;return c<L||c>7-L},b=s.b;
+return m.filter(x=>{if(fl(x.f)||x.fl=='c')return false;const p=Math.abs(b[x.f]);if(fl(x.t)){if(b[x.t])return false;return p==2||p==6}
+if(p==3||p==4||p==5||(p==1&&Math.abs((x.t>>3)-(x.f>>3))==2)){const fr=x.f>>3,fc=x.f&7,tr=x.t>>3,tc=x.t&7,dr=Math.sign(tr-fr),dc=Math.sign(tc-fc);let r=fr+dr,c=fc+dc;while(r!=tr||c!=tc){if(fl(r*8+c))return false;r+=dr;c+=dc}}return true})}
+const tdhot=(b,t)=>{const k=b.indexOf(6*t);if(k<0)return false;return gen({b,t:-t,r:0,ep:-1,hm:0,pc:TPC},true).some(x=>x.t==k)};
+const legal=s=>{if(RLR)VR=ruleOf(s);const l=gen(s).filter(m=>safe(s,mk(s,m)));return VR=='mirror'?mfilt(s,l):l};
 const sortm=(s,ms)=>ms.map(m=>[m,(m.cp?10*Math.abs(m.cp)-Math.abs(s.b[m.f])+100:0)+(m.p?50:0)]).sort((a,b)=>b[1]-a[1]).map(x=>x[0]);
 /* ---- motor ---- */
 function ev(s){const b=s.b,P=EW,pc=[[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0]],kq=[0,0];let v=0,mat=0,bw=0,bb=0;
@@ -295,25 +338,25 @@ const ek=kq[1-wi],dd=Math.max(Math.abs((ek>>3)-r),Math.abs((ek&7)-c));if(dd<4)x+
 v+=sg*x}
 return(v+(bw>1?P.bp:0)-(bb>1?P.bp:0))*s.t+10}
 const ZB=(()=>{let x=123456789;const r=()=>{x^=x<<13;x^=x>>>17;x^=x<<5;return x>>>0},z=[];for(let i=0;i<64*13*2;i++)z.push(r());return z})(),TT=new Map();
-function hsh(s){let h1=0,h2=0;const b=s.b;for(let i=0;i<64;i++){const p=b[i];if(p){const k=(i*13+p+6)*2;h1^=ZB[k];h2^=ZB[k+1]}}if(s.t<0)h1^=0x9e3779b9;h1^=(s.r*2654435761)>>>0;h2^=(s.ep+2)*40503+(s.ck|0)*7919+((s.pc|0)%20)*104729+(s.sv|0)*3571+(s.vi|0)*8191+(s.lt|0)*9973+hx2(s);return(h1>>>0)*2097152+(h2&0x1fffff)}
+function hsh(s){let h1=0,h2=0;const b=s.b;for(let i=0;i<64;i++){const p=b[i];if(p){const k=(i*13+p+6)*2;h1^=ZB[k];h2^=ZB[k+1]}}if(s.t<0)h1^=0x9e3779b9;h1^=(s.r*2654435761)>>>0;h2^=(s.ep+2)*40503+(s.ck|0)*7919+pcx(s)*104729+(s.sv|0)*3571+(s.vi|0)*8191+(s.lt|0)*9973+hx2(s);return(h1>>>0)*2097152+(h2&0x1fffff)}
 let nodes,tEnd,stop;
 function qs(s,a,bt){if((++nodes&2047)==0&&performance.now()>tEnd)stop=1;if(stop)return 0;
-if(VR){const w=vw(s);if(w)return w==s.t?3e4:-3e4}let e=ev(s);if(e>=bt)return e;if(e>a)a=e;
+if(RLR)VR=ruleOf(s);if(VR||RLR){const w=vw(s);if(w)return w==s.t?3e4:-3e4}let e=ev(s);if(e>=bt)return e;if(e>a)a=e;
 const mr=VR=='mirror'?mrest(s):0;for(const m of sortm(s,gen(s,1))){if(mr&&Math.abs(s.b[m.f])!=mr)continue;const n=mk(s,m);if(!safe(s,n))continue;const v=-qs(n,-bt,-a);if(v>=bt)return v;if(v>a)a=v}return a}
 function nm(s,d,a,bt,pl){if((++nodes&2047)==0&&performance.now()>tEnd)stop=1;if(stop)return 0;
-if(VR){const w=vw(s);if(w)return w==s.t?3e4-pl:-3e4+pl}const ck=inchk(s);if(ck)d++;if(d<=0)return qs(s,a,bt);if(s.hm>=100)return 0;
+if(RLR)VR=ruleOf(s);if(VR||RLR){const w=vw(s);if(w)return w==s.t?3e4-pl:-3e4+pl}const ck=inchk(s);if(ck)d++;if(d<=0)return qs(s,a,bt);if(s.hm>=100)return 0;
 const a0=a,h=hsh(s),e=TT.get(h);if(e&&e.d>=d&&pl>0){if(e.f==0)return e.v;if(e.f==1&&e.v>=bt)return e.v;if(e.f==2&&e.v<=a)return e.v}
 const ms=sortm(s,gen(s)),mr=VR=='mirror'?mrest(s):0;if(e&&e.m){const i=ms.findIndex(x=>x.f==e.m.f&&x.t==e.m.t&&x.p==e.m.p);if(i>0){const x=ms[i];ms.splice(i,1);ms.unshift(x)}}
 let best=-1e5,any=0,bm=null;for(const m of ms){if(mr&&Math.abs(s.b[m.f])!=mr)continue;const n=mk(s,m);if(!safe(s,n))continue;any=1;
-const v=-nm(n,d-1,-bt,-a,pl+1);if(stop)return 0;if(v>best){best=v;bm=m;if(v>a)a=v;if(a>=bt)break}}
+const v=n.t==s.t?nm(n,d-1,a,bt,pl+1):-nm(n,d-1,-bt,-a,pl+1);if(stop)return 0;if(v>best){best=v;bm=m;if(v>a)a=v;if(a>=bt)break}}
 if(!any)return ck?-3e4+pl:0;if(TT.size>4e5)TT.clear();TT.set(h,{d,v:best,f:best<=a0?2:best>=bt?1:0,m:bm});return best}
 function srch(s,d,tm,rnd){let ms=legal(s);if(!ms.length)return null;nodes=0;stop=0;TT.clear();tEnd=performance.now()+tm;ms=sortm(s,ms);let best=[ms[0],0],all=[];
-for(let dd=1;dd<=d;dd++){const res=[];let bs=-1e9;for(const m of ms){const v=-nm(mk(s,m),dd-1,-1e9,rnd?1e9:-bs,1);if(stop)break;res.push([m,v]);if(v>bs)bs=v}
+for(let dd=1;dd<=d;dd++){const res=[];let bs=-1e9;for(const m of ms){const n0=mk(s,m),v=n0.t==s.t?nm(n0,dd-1,rnd?-1e9:bs,1e9,1):-nm(n0,dd-1,-1e9,rnd?1e9:-bs,1);if(stop)break;res.push([m,v]);if(v>bs)bs=v}
 if(stop)break;res.sort((a,b)=>b[1]-a[1]);all=res;ms=res.map(x=>x[0]);best=rnd?res.map(([m,v])=>[m,v+(Math.random()-.5)*rnd]).sort((a,b)=>b[1]-a[1])[0]:res[0]}
 return{m:best[0],v:best[1],all}}
 function think(s,L){const l=legal(s);if(l.length<2)return l[0]||null;const r=srch(s,L.d+(EW.dd||0),L.t*G.tm,L.k+EW.rnd*(L.d<4?1:.3));return r&&r.m}
 
-let EW=null;onmessage=e=>{const{id,s,d,tm,rnd,ew,cf,v9,vr}=e.data;VR=vr||'';if(cf)setCF(cf,v9);EW=ew;const r=srch(s,d,tm,rnd);postMessage({id,r:r&&{m:r.m,v:r.v,all:(r.all||[]).slice(0,4).map(x=>({m:{f:x[0].f,t:x[0].t,p:x[0].p},v:x[1]}))}})};</script>
+let EW=null;onmessage=e=>{const{id,s,d,tm,rnd,ew,cf,v9,vr,rl}=e.data;VR=vr||'';RLR=rl?1:0;if(cf)setCF(cf,v9);EW=ew;const r=srch(s,d,tm,rnd);postMessage({id,r:r&&{m:r.m,v:r.v,all:(r.all||[]).slice(0,4).map(x=>({m:{f:x[0].f,t:x[0].t,p:x[0].p},v:x[1]}))}})};</script>
 <script>
 const $=s=>document.querySelector(s),bd=$('#bd'),pl=$('#pl'),files='abcdefgh',V=[0,100,320,330,500,900,0];
 const KN=[[-2,-1],[-2,1],[-1,-2],[-1,2],[1,-2],[1,2],[2,-1],[2,1]],KG=[[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]],DG=[[-1,-1],[-1,1],[1,-1],[1,1]],ST=[[-1,0],[1,0],[0,-1],[0,1]],AL=DG.concat(ST);
@@ -346,27 +389,32 @@ const d=A[ty];if(st==2)return o+`<path d="${d}" fill="${w?'#f1f5fa':'#2c52d0'}"/
 return o+`<path d="${d}" fill="${w?'url(#gw)':'url(#gc)'}"/><path d="${d}" fill="${w?'url(#gs)':'url(#gn)'}" clip-path="url(#hr)"/><path d="${d}" fill="none" stroke="${w?'#fff':'#a8ecff'}" stroke-width=".7"/></svg>`}
 /* ---- szabályok ---- */
 function init(){const b=Array(64).fill(0),o=[4,2,3,5,6,3,2,4];for(let i=0;i<8;i++){b[i]=-o[i];b[8+i]=-1;b[48+i]=1;b[56+i]=o[i]}return{b,t:1,r:15,ep:-1,hm:0,tp:0}}
-function att(b,s,by){const r=s>>3,c=s&7,pr=r+by,ok=(x,y)=>x>=0&&x<8&&y>=0&&y<8;
-if(pr>=0&&pr<8)for(const dc of[-1,1])if(ok(pr,c+dc)&&b[pr*8+c+dc]==by)return 1;
-for(const[d,e]of KN)if(ok(r+d,c+e)&&b[(r+d)*8+c+e]==2*by)return 1;
-for(const[d,e]of KG)if(ok(r+d,c+e)&&b[(r+d)*8+c+e]==6*by)return 1;
-for(const[d,e]of AL){let rr=r+d,cc=c+e;const dg=d&&e;while(ok(rr,cc)){const q=b[rr*8+cc];if(q){if(q*by>0){const a=Math.abs(q);if(a==5||(dg?a==3:a==4))return 1}break}rr+=d;cc+=e}}return 0}
-function gen0(s,caps){const{b,t,r:rt,ep}=s,m=[],ok=(x,y)=>x>=0&&x<8&&y>=0&&y<8;
-const sl=VR=='soul'?slotOf(s,t):0,ssq=sl&63,sty=sl>>6;
+function att(b,s,by){const r=s>>3,c=s&7,pr=r+by,CYL=VR=='cyl',ok=(x,y)=>x>=0&&x<8&&(CYL||(y>=0&&y<8));
+if(pr>=0&&pr<8)for(const dc of[-1,1])if(ok(pr,c+dc)&&b[pr*8+((c+dc)&7)]==by)return 1;
+for(const[d,e]of KN)if(ok(r+d,c+e)&&b[(r+d)*8+((c+e)&7)]==2*by)return 1;
+for(const[d,e]of KG)if(ok(r+d,c+e)&&b[(r+d)*8+((c+e)&7)]==6*by)return 1;
+for(const[d,e]of AL){let rr=r+d,cc=c+e;const dg=d&&e;for(let k=0;k<7&&ok(rr,cc);k++){const q=b[rr*8+(cc&7)];if(q){if(q*by>0){const a=Math.abs(q);if(a==5||(dg?a==3:a==4))return 1}break}rr+=d;cc+=e}}return 0}
+function gen0(s,caps){const{b,t,r:rt,ep}=s,m=[],ok=(x,y)=>x>=0&&x<8&&(CYL||(y>=0&&y<8));
+const CYL=VR=='cyl',sl=VR=='soul'?slotOf(s,t):0,ssq=sl&63,sty=sl>>6;
 for(let f=0;f<64;f++){const p=b[f];if(p*t<=0)continue;const ty0=Math.abs(p),ty=(sty&&f==ssq)?sty:ty0,r=f>>3,c=f&7,n0=m.length;
-if(ty==1){const nr=r-t,pr=(nr==0||nr==7)&&ty0==1,ad=(to,cp,fl)=>{if(pr)for(const q of[5,4,3,2])m.push({f,t:to,cp,p:q});else m.push({f,t:to,cp,fl})};
+if(ty==1){const nr=r-t,pr=(nr==0||nr==7)&&ty0==1,ad=(to,cp,fl)=>{if(pr)for(const q of VR=='lvl'?[2]:[5,4,3,2])m.push({f,t:to,cp,p:q});else m.push({f,t:to,cp,fl})};
 const o=nr*8+c;if(!b[o]){if(!caps||pr)ad(o,0);if(!caps&&r==(t>0?6:1)&&!b[o-8*t])m.push({f,t:o-8*t,cp:0})}
-for(const dc of[-1,1]){const cc=c+dc;if(cc<0||cc>7)continue;const to=nr*8+cc;if(b[to]*t<0)ad(to,b[to]);else if(to==ep)ad(to,1,'e')}}
-else if(ty==2||ty==6){for(const[d,e]of ty==2?KN:KG){const rr=r+d,cc=c+e;if(!ok(rr,cc))continue;const to=rr*8+cc;if(!b[to]){if(!caps)m.push({f,t:to,cp:0})}else if(b[to]*t<0)m.push({f,t:to,cp:b[to]})}
+for(const dc of[-1,1]){if(!CYL&&(c+dc<0||c+dc>7))continue;const to=nr*8+((c+dc)&7);if(b[to]*t<0)ad(to,b[to]);else if(to==ep)ad(to,1,'e')}}
+else if(ty==2||ty==6){for(const[d,e]of ty==2?KN:KG){const rr=r+d,cc=c+e;if(!ok(rr,cc))continue;const to=rr*8+(cc&7);if(!b[to]){if(!caps)m.push({f,t:to,cp:0})}else if(b[to]*t<0)m.push({f,t:to,cp:b[to]})}
 if(ty==6&&ty0==6&&!caps&&f==(t>0?56:0)+CF.k){for(const ks of[1,0]){if(!(rt&(t>0?(ks?1:2):(ks?4:8))))continue;const z=csq(t,ks),b2=b.slice();b2[f]=0;b2[z.rf]=0;let ok=b[z.rf]==4*t;
 for(let x=Math.min(f,z.kt);x<=Math.max(f,z.kt);x++){if(b[x]&&x!=f&&x!=z.rf)ok=0;if(VR!='vip'&&att(b2,x,-t))ok=0}
 for(let x=Math.min(z.rf,z.rt);x<=Math.max(z.rf,z.rt);x++)if(b[x]&&x!=f&&x!=z.rf)ok=0;
 if(ok)m.push({f,t:V960?z.rf:z.kt,cp:0,fl:'c'})}}}
-else for(const[d,e]of ty==3?DG:ty==4?ST:AL){let rr=r+d,cc=c+e;while(ok(rr,cc)){const to=rr*8+cc;if(!b[to]){if(!caps)m.push({f,t:to,cp:0})}else{if(b[to]*t<0)m.push({f,t:to,cp:b[to]});break}rr+=d;cc+=e}}
+else for(const[d,e]of ty==3?DG:ty==4?ST:AL){let rr=r+d,cc=c+e;for(let kk=0;kk<7&&ok(rr,cc);kk++){const to=rr*8+(cc&7);if(!b[to]){if(!caps)m.push({f,t:to,cp:0})}else{if(b[to]*t<0)m.push({f,t:to,cp:b[to]});break}rr+=d;cc+=e}}
 if(sty&&f==ssq){const keep=[];for(let i=n0;i<m.length;i++){const x=m[i];if(ty0==1&&ty!=1&&((x.t>>3)==0||(x.t>>3)==7))continue;x.bw=ty!=ty0?1:0;keep.push(x)}m.length=n0;for(const x of keep)m.push(x)}}
 return m}
-function gen(s,caps){const m=gen0(s,caps);return VR=='crater'&&s.cr&&s.cr.length?cfilt(s,m):m}
-function mk(s,m){const b=s.b.slice(),p=b[m.f],ty=Math.abs(p);let ep=-1,hm=s.hm+1;if(m.cp||ty==1)hm=0;
+function gen(s,caps){let m=gen0(s,caps);
+if(VR=='crater'&&s.cr&&s.cr.length)m=cfilt(s,m);
+else if(VR=='tide')m=tfilt(s,m);
+else if(VR=='cyl'){const seen=new Set();m=m.filter(x=>{const k=(x.f*64+x.t)*8+(x.p|0);if(seen.has(k))return false;seen.add(k);return true})}
+else if(VR=='auc'&&!caps){const co=coOf(s),mine=s.t>0?co&15:co>>4;if(mine>=AUCC&&!s.dm){const add=[];for(const x of m)if(x.fl!='c')add.push(Object.assign({},x,{pay:1}));m=m.concat(add)}}
+return m}
+function mk(s,m){if(RLR)VR=ruleOf(s);const b=s.b.slice(),p=b[m.f],ty=Math.abs(p);let ep=-1,hm=s.hm+1;if(m.cp||ty==1)hm=0;
 b[m.t]=m.p?m.p*s.t:p;b[m.f]=0;if(m.fl=='e')b[m.t+8*s.t]=0;
 if(m.fl=='c'){const z=csq(s.t,m.t>m.f);b[m.f]=0;b[z.rf]=0;b[z.kt]=6*s.t;b[z.rt]=4*s.t}
 if(ty==1&&!m.fl&&Math.abs(m.t-m.f)==16)ep=(m.f+m.t)/2;
@@ -374,7 +422,8 @@ if(VR=='atom'&&(m.cp||m.fl=='e'))xpl(b,m.t);let ck=s.ck|0;if(VR=='3chk'&&hot(b,-
 let nr=s.r&MK[m.f]&MK[m.t],sh=null;const pc=(s.pc|0)+1;
 if(VR=='tt'&&pc%10==0){const mv=tsh(b,(pc/10)&1?1:-1);if(mv.length){const nb=b.slice();for(let i=0;i<mv.length;i+=2)nb[mv[i]]=0;for(let i=0;i<mv.length;i+=2)nb[mv[i+1]]=b[mv[i]];
 if(!hot(nb,s.t)){for(let i=0;i<64;i++)b[i]=nb[i];sh=mv;ep=-1;if(!(b[60]==6&&b[63]==4))nr&=~1;if(!(b[60]==6&&b[56]==4))nr&=~2;if(!(b[4]==-6&&b[7]==-4))nr&=~4;if(!(b[4]==-6&&b[0]==-4))nr&=~8}}}
-let sv=s.sv,cr=s.cr,vi=s.vi,bm=s.bm,lt=s.lt,ex=-1,rv=null,pf=null;
+let sv=s.sv,cr=s.cr,vi=s.vi,bm=s.bm,lt=s.lt,ex=-1,rv=null,pf=null,tw=s.tw,tv=-1,hr=s.hr,cw=null,mq=s.mq,coN=s.co,dm=0,pq=null;
+if(RLR)lt=ty;
 if(VR){const cap=m.cp||m.fl=='e';
 if(VR=='soul'){let ws=(sv|0)&511,bs=(sv|0)>>9;if(s.t>0)ws=0;else bs=0;if(cap){const sl=m.t+64*(m.fl=='e'?1:Math.abs(m.cp));if(s.t>0)ws=sl;else bs=sl}sv=ws|(bs<<9)}
 else if(VR=='grav'){const g=gsl(b);if(g.length)sh=g;ep=-1;nr=0}
@@ -382,6 +431,23 @@ else if(VR=='crater'){const nc=[];if(cr)for(let i=0;i<cr.length;i+=2)if(cr[i+1]>
 else if(VR=='vip'){if(vi==null)vi=vipInit(s.b);let w=vi&127,bl=vi>>7;const cs=m.fl=='e'?m.t+8*s.t:m.t,dst=m.fl=='c'?csq(s.t,m.t>m.f).kt:m.t;
 if(s.t>0){if(w==m.f+1)w=dst+1;if(cap&&bl==cs+1)bl=0}else{if(bl==m.f+1)bl=dst+1;if(cap&&w==cs+1)w=0}vi=w|(bl<<7)}
 else if(VR=='mirror')lt=ty;
+else if(VR=='twin'&&tw){tw=tw.slice();const cs=m.fl=='e'?m.t+8*s.t:m.t,dst=m.fl=='c'?csq(s.t,m.t>m.f).kt:m.t;
+if(cap){const i=tw.indexOf(cs);if(i>=0){const j=i^1,tq=tw[j];if(tq>=0){b[tq]=0;nr&=MK[tq];tv=tq}tw[i]=-1;tw[j]=-1}}
+for(let i=0;i<tw.length;i++)if(tw[i]==m.f)tw[i]=dst}
+else if(VR=='heir'){const hv=hr==null?hrInit(s.b):hr;let w=hv&127,bl=hv>>7;const cs=m.fl=='e'?m.t+8*s.t:m.t,dst=m.fl=='c'?csq(s.t,m.t>m.f).kt:m.t;
+if(s.t>0){if(w==m.f+1)w=m.p?0:dst+1;if(cap&&bl==cs+1)bl=0}else{if(bl==m.f+1)bl=m.p?0:dst+1;if(cap&&w==cs+1)w=0}
+hr=w|(bl<<7);const o=-s.t,slot=o>0?w:bl;
+if(slot&&!HNEST&&hot(b,o)){const ns={b:b.slice(),t:o,r:nr,ep,hm,pc,hr};HNEST=1;let none;try{none=!legal(ns).length}finally{HNEST=0}if(none){const kq=b.indexOf(6*o),hq=slot-1;b[kq]=0;b[hq]=6*o;if(o>0)w=0;else bl=0;hr=w|(bl<<7);nr&=o>0?~3:~12;cw=[kq,hq];ep=-1}}}
+else if(VR=='rot'&&pc%6==0){const nb=Array(64).fill(0),mv=[];for(let r=0;r<8;r++)for(let c=0;c<8;c++){const f=r*8+c,q=b[f];if(!q)continue;const to=c*8+(7-r);nb[to]=q;mv.push(f,to)}
+const pp=[];for(let c=0;c<8;c++){if(nb[c]==1){nb[c]=5;pp.push(c)}if(nb[56+c]==-1){nb[56+c]=-5;pp.push(56+c)}}
+if(!hot(nb,s.t)){for(let i=0;i<64;i++)b[i]=nb[i];sh=mv;if(pp.length)pq=pp;ep=-1;nr=0}}
+else if(VR=='quake'&&pc%5==0){const q=qkS(pc/5,s.sd),ln=[];for(let i=0;i<8;i++)ln.push(q.row?q.idx*8+i:i*8+q.idx);const nb=b.slice(),mv=[];
+for(let i=0;i<8;i++){const f=ln[i],to=ln[(i+q.dir+8)%8];nb[to]=b[f];if(b[f]&&f!=to)mv.push(f,to)}
+const pp=[];for(let c=0;c<8;c++){if(nb[c]==1){nb[c]=5;pp.push(c)}if(nb[56+c]==-1){nb[56+c]=-5;pp.push(56+c)}}
+if(mv.length&&!hot(nb,s.t)){for(let i=0;i<64;i++)b[i]=nb[i];sh=mv;if(pp.length)pq=pp;ep=-1;for(let i=0;i<mv.length;i+=2)nr&=MK[mv[i]]}}
+else if(VR=='lvl'&&cap){const cur=Math.abs(b[m.t]);if(cur<5)b[m.t]=(cur+1)*s.t}
+else if(VR=='auc'){const co=coOf(s);let w=co&15,bl=co>>4;if(m.pay){if(s.t>0)w-=AUCC;else bl-=AUCC}if(cap){if(s.t>0)w=Math.min(15,w+1);else bl=Math.min(15,bl+1)}coN=w|(bl<<4);dm=m.pay?1:0}
+else if(VR=='mask'&&mq){mq=mq.slice();const cs=m.fl=='e'?m.t+8*s.t:m.t;mqClr(mq,m.f);if(cap)mqClr(mq,cs);if(m.fl=='c')mqClr(mq,csq(s.t,m.t>m.f).rf)}
 else if(VR=='rev'){const o=s.t,q0=m.fl=='c'?csq(s.t,m.t>m.f).kt:m.t,r0=q0>>3,c0=q0&7,fl=[];
 for(const[dr,dc]of[[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]]){let r=r0+dr,c=c0+dc;const run=[];
 while(r>=0&&r<8&&c>=0&&c<8){const q=b[r*8+c];if(q*o<0){const a=Math.abs(q);if(a==1||a==6){run.length=0;break}run.push(r*8+c)}else if(q*o>0)break;else{run.length=0;break}r+=dr;c+=dc}
@@ -401,13 +467,13 @@ const before=new Set(nb(o0).filter(i=>s.b[i]*s.t>0));let bi=-1,bv=0;for(const i 
 if(bi>=0){sq=bi;tm=5}else tm--}
 else tm--;
 if(tm<=0){ex=sq;xplb(b,sq);bm[si]=-1;bm[si+1]=0;if(bm[oi]>=0&&b[bm[oi]]*(oi?-1:1)<=0){bm[oi]=-1;bm[oi+1]=0}}else{bm[si]=sq;bm[si+1]=tm}}}}
-return{b,t:-s.t,r:nr,ep,hm,tp:(s.tp|0)|(m.fl=='t'?(s.t>0?1:2):0),ck,pc,sh,sv,cr,vi,bm,lt,ex,rv,pf}}
+return{b,t:m.pay?s.t:-s.t,r:nr,ep,hm,tp:(s.tp|0)|(m.fl=='t'?(s.t>0?1:2):0),ck,pc,sh,sv,cr,vi,bm,lt,ex,rv,pf,tw,tv,hr,cw,mq,co:coN,dm,pq,sd:s.sd}}
 let VR='';const kp=(b,t)=>b.indexOf(6*t);
 const adj=(a,b)=>a>=0&&b>=0&&Math.abs((a>>3)-(b>>3))<2&&Math.abs((a&7)-(b&7))<2;
-const hot=(b,t)=>{if(VR=='vip')return false;const k=b.indexOf(6*t);if(k<0)return false;if(VR=='crater'&&CRC&&CRC.length)return crhot(b,t);if(VR=='atom'){const o=b.indexOf(-6*t);if(o>=0&&adj(k,o))return false}return att(b,k,-t)};
-const inchk=(s,t=s.t)=>{CRC=s.cr||null;return hot(s.b,t)||(VR=='soul'&&sh2(s,t))};
-const safe=(s,n)=>{if(VR=='atom'){if(n.b.indexOf(6*s.t)<0)return false;if(n.b.indexOf(-6*s.t)<0)return true}CRC=n.cr||null;return!(hot(n.b,s.t)||(VR=='soul'&&sh2(n,s.t)))};
-const vw=s=>{if(VR=='koth'){const b=s.b;if(b[27]==6||b[28]==6||b[35]==6||b[36]==6)return 1;if(b[27]==-6||b[28]==-6||b[35]==-6||b[36]==-6)return -1}
+const hot=(b,t)=>{if(VR=='vip')return false;if(VR=='tide')return tdhot(b,t);const k=b.indexOf(6*t);if(k<0)return false;if(VR=='crater'&&CRC&&CRC.length)return crhot(b,t);if(VR=='atom'){const o=b.indexOf(-6*t);if(o>=0&&adj(k,o))return false}return att(b,k,-t)};
+const inchk=(s,t=s.t)=>{if(RLR)VR=ruleOf(s);CRC=s.cr||null;TPC=s.pc|0;return hot(s.b,t)||(VR=='soul'&&sh2(s,t))};
+const safe=(s,n)=>{if(RLR)VR=ruleOf(s);if(VR=='auc'&&n.t==s.t&&hot(n.b,-s.t))return false;if(VR=='atom'){if(n.b.indexOf(6*s.t)<0)return false;if(n.b.indexOf(-6*s.t)<0)return true}CRC=n.cr||null;TPC=n.pc|0;return!(hot(n.b,s.t)||(VR=='soul'&&sh2(n,s.t)))};
+const vw=s=>{if(RLR){if(s.b.indexOf(6)<0)return -1;if(s.b.indexOf(-6)<0)return 1}if(VR=='koth'){const b=s.b;if(b[27]==6||b[28]==6||b[35]==6||b[36]==6)return 1;if(b[27]==-6||b[28]==-6||b[35]==-6||b[36]==-6)return -1}
 else if(VR=='atom'){if(s.b.indexOf(6)<0)return -1;if(s.b.indexOf(-6)<0)return 1}
 else if(VR=='3chk'){const c=s.ck|0;if((c&3)>=3)return 1;if(c>>2>=3)return -1}
 else if(VR=='vip'){const vi=s.vi==null?vipInit(s.b):s.vi,w=vi&127,bl=vi>>7;if(!w)return -1;if(!bl)return 1;if((w-1)>>3==0)return 1;if((bl-1)>>3==7)return -1}return 0};
@@ -427,11 +493,28 @@ function xplb(b,q){for(let dr=-1;dr<2;dr++)for(let dc=-1;dc<2;dc++){const r=(q>>
 const mact=s=>{const lt=s.lt|0;return lt&&(((s.pc|0)+1)%3==0)?lt:0};
 const mfilt=(s,l)=>{const lt=mact(s);if(lt){const f=l.filter(m=>Math.abs(s.b[m.f])==lt);if(f.length)return f}return l};
 function mrest(s){const lt=mact(s);if(!lt)return 0;for(const m of gen(s))if(Math.abs(s.b[m.f])==lt&&safe(s,mk(s,m)))return lt;return 0}
-function hx2(s){let h=0;if(s.cr)for(let i=0;i<s.cr.length;i+=2)h+=(s.cr[i]+1)*(s.cr[i+1]+3)*7907;if(s.bm)for(let i=0;i<4;i++)h+=(s.bm[i]+2)*(i+5)*6577;return h}
+function hx2(s){let h=0;if(s.cr)for(let i=0;i<s.cr.length;i+=2)h+=(s.cr[i]+1)*(s.cr[i+1]+3)*7907;if(s.bm)for(let i=0;i<4;i++)h+=(s.bm[i]+2)*(i+5)*6577;
+if(s.tw)for(let i=0;i<s.tw.length;i++)h+=(s.tw[i]+2)*(i+9)*7001;if(s.mq)h+=(s.mq[0]%100003)*13+(s.mq[1]%100003)*17;h+=(s.hr|0)*3331+(s.co==null?0:s.co*2909)+(s.dm|0)*1021;return h}
+let RLR=0,TPC=0,HNEST=0;const AUCC=3,RLP=['atom','grav','tt','mirror','rev','bill','soul','crater','lvl','quake','rot','tide','cyl'],PCV=new Set(['tt','tide','rot','quake','mirror']);
+const hs32=x=>{x=(x^(x>>>16))>>>0;x=Math.imul(x,2246822519)>>>0;x=(x^(x>>>13))>>>0;x=Math.imul(x,3266489917)>>>0;return(x^(x>>>16))>>>0};
+const ridx=(sd,k)=>{const n=RLP.length;let i=hs32((sd|0)+k*7919)%n;if(k>1&&i==hs32((sd|0)+(k-1)*7919)%n)i=(i+1)%n;return i};
+const ruleK=(sd,k)=>k<1?'':RLP[ridx(sd,k)];
+const ruleOf=s=>RLR?ruleK(s.sd,(s.pc|0)>>3):VR;
+const pcx=s=>RLR?(s.pc|0):(PCV.has(VR)?(s.pc|0)%120:0);
+const qkS=(j,sd)=>{const x=hs32((sd|0)*31+j*104729);return{row:x&1,idx:(x>>>1)%8,dir:(x>>>4)&1?1:-1}};
+const tdLvl=pc=>[0,1,2,3,2,1][((pc|0)>>2)%6];
+const coOf=s=>s.co==null?85:s.co;
+const mqHas=(mq,q)=>mq&&(q<32?(mq[0]>>>q)&1:(mq[1]>>>(q-32))&1);
+const mqClr=(mq,q)=>{if(q<32)mq[0]=(mq[0]&~(1<<q))>>>0;else mq[1]=(mq[1]&~(1<<(q-32)))>>>0};
+function hrInit(b){const f=t=>{const k=b.indexOf(6*t);if(k<0)return -1;const o=k-8*t;if(o>=0&&o<64&&b[o]==t)return o;let best=-1,bd=99;for(let i=0;i<64;i++)if(b[i]==t){const d=Math.max(Math.abs((i>>3)-(k>>3)),Math.abs((i&7)-(k&7)));if(d<bd){bd=d;best=i}}return best};return(f(1)+1)|((f(-1)+1)<<7)}
+function tfilt(s,m){const L=tdLvl(s.pc);if(!L)return m;const fl=q=>{const c=q&7;return c<L||c>7-L},b=s.b;
+return m.filter(x=>{if(fl(x.f)||x.fl=='c')return false;const p=Math.abs(b[x.f]);if(fl(x.t)){if(b[x.t])return false;return p==2||p==6}
+if(p==3||p==4||p==5||(p==1&&Math.abs((x.t>>3)-(x.f>>3))==2)){const fr=x.f>>3,fc=x.f&7,tr=x.t>>3,tc=x.t&7,dr=Math.sign(tr-fr),dc=Math.sign(tc-fc);let r=fr+dr,c=fc+dc;while(r!=tr||c!=tc){if(fl(r*8+c))return false;r+=dr;c+=dc}}return true})}
+const tdhot=(b,t)=>{const k=b.indexOf(6*t);if(k<0)return false;return gen({b,t:-t,r:0,ep:-1,hm:0,pc:TPC},true).some(x=>x.t==k)};
 let VT=0;
 function tpm(s,l){const o=[],t=s.t;for(let f=0;f<64;f++){if(s.b[f]*t<=0)continue;const pw=Math.abs(s.b[f])==1;for(let e=0;e<64;e++){if(s.b[e])continue;if(pw&&((e>>3)==0||(e>>3)==7))continue;if(l.some(x=>x.f==f&&x.t==e))continue;
 const m={f,t:e,cp:0,fl:'t'},n=mk(s,m);if(att(n.b,kp(n.b,t),-t)||att(n.b,kp(n.b,-t),t))continue;o.push(m)}}return o}
-const legal=s=>{const l0=gen(s).filter(m=>safe(s,mk(s,m))),l=VR=='mirror'?mfilt(s,l0):l0;return VT&&!((s.tp|0)&(s.t>0?1:2))?l.concat(tpm(s,l)):l};
+const legal=s=>{if(RLR)VR=ruleOf(s);const l0=gen(s).filter(m=>safe(s,mk(s,m))),l=VR=='mirror'?mfilt(s,l0):l0;return VT&&!((s.tp|0)&(s.t>0?1:2))?l.concat(tpm(s,l)):l};
 const sortm=(s,ms)=>ms.map(m=>[m,(m.cp?10*Math.abs(m.cp)-Math.abs(s.b[m.f])+100:0)+(m.p?50:0)]).sort((a,b)=>b[1]-a[1]).map(x=>x[0]);
 /* ---- motor ---- */
 function ev(s){const b=s.b,P=EW,pc=[[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0]],kq=[0,0];let v=0,mat=0,bw=0,bb=0;
@@ -450,20 +533,20 @@ const ek=kq[1-wi],dd=Math.max(Math.abs((ek>>3)-r),Math.abs((ek&7)-c));if(dd<4)x+
 v+=sg*x}
 return(v+(bw>1?P.bp:0)-(bb>1?P.bp:0))*s.t+10}
 const ZB=(()=>{let x=123456789;const r=()=>{x^=x<<13;x^=x>>>17;x^=x<<5;return x>>>0},z=[];for(let i=0;i<64*13*2;i++)z.push(r());return z})(),TT=new Map();
-function hsh(s){let h1=0,h2=0;const b=s.b;for(let i=0;i<64;i++){const p=b[i];if(p){const k=(i*13+p+6)*2;h1^=ZB[k];h2^=ZB[k+1]}}if(s.t<0)h1^=0x9e3779b9;h1^=(s.r*2654435761)>>>0;h2^=(s.ep+2)*40503+(s.ck|0)*7919+((s.pc|0)%20)*104729+(s.sv|0)*3571+(s.vi|0)*8191+(s.lt|0)*9973+hx2(s);return(h1>>>0)*2097152+(h2&0x1fffff)}
+function hsh(s){let h1=0,h2=0;const b=s.b;for(let i=0;i<64;i++){const p=b[i];if(p){const k=(i*13+p+6)*2;h1^=ZB[k];h2^=ZB[k+1]}}if(s.t<0)h1^=0x9e3779b9;h1^=(s.r*2654435761)>>>0;h2^=(s.ep+2)*40503+(s.ck|0)*7919+pcx(s)*104729+(s.sv|0)*3571+(s.vi|0)*8191+(s.lt|0)*9973+hx2(s);return(h1>>>0)*2097152+(h2&0x1fffff)}
 let nodes,tEnd,stop;
 function qs(s,a,bt){if((++nodes&2047)==0&&performance.now()>tEnd)stop=1;if(stop)return 0;
-if(VR){const w=vw(s);if(w)return w==s.t?3e4:-3e4}let e=ev(s);if(e>=bt)return e;if(e>a)a=e;
+if(RLR)VR=ruleOf(s);if(VR||RLR){const w=vw(s);if(w)return w==s.t?3e4:-3e4}let e=ev(s);if(e>=bt)return e;if(e>a)a=e;
 const mr=VR=='mirror'?mrest(s):0;for(const m of sortm(s,gen(s,1))){if(mr&&Math.abs(s.b[m.f])!=mr)continue;const n=mk(s,m);if(!safe(s,n))continue;const v=-qs(n,-bt,-a);if(v>=bt)return v;if(v>a)a=v}return a}
 function nm(s,d,a,bt,pl){if((++nodes&2047)==0&&performance.now()>tEnd)stop=1;if(stop)return 0;
-if(VR){const w=vw(s);if(w)return w==s.t?3e4-pl:-3e4+pl}const ck=inchk(s);if(ck)d++;if(d<=0)return qs(s,a,bt);if(s.hm>=100)return 0;
+if(RLR)VR=ruleOf(s);if(VR||RLR){const w=vw(s);if(w)return w==s.t?3e4-pl:-3e4+pl}const ck=inchk(s);if(ck)d++;if(d<=0)return qs(s,a,bt);if(s.hm>=100)return 0;
 const a0=a,h=hsh(s),e=TT.get(h);if(e&&e.d>=d&&pl>0){if(e.f==0)return e.v;if(e.f==1&&e.v>=bt)return e.v;if(e.f==2&&e.v<=a)return e.v}
 const ms=sortm(s,gen(s)),mr=VR=='mirror'?mrest(s):0;if(e&&e.m){const i=ms.findIndex(x=>x.f==e.m.f&&x.t==e.m.t&&x.p==e.m.p);if(i>0){const x=ms[i];ms.splice(i,1);ms.unshift(x)}}
 let best=-1e5,any=0,bm=null;for(const m of ms){if(mr&&Math.abs(s.b[m.f])!=mr)continue;const n=mk(s,m);if(!safe(s,n))continue;any=1;
-const v=-nm(n,d-1,-bt,-a,pl+1);if(stop)return 0;if(v>best){best=v;bm=m;if(v>a)a=v;if(a>=bt)break}}
+const v=n.t==s.t?nm(n,d-1,a,bt,pl+1):-nm(n,d-1,-bt,-a,pl+1);if(stop)return 0;if(v>best){best=v;bm=m;if(v>a)a=v;if(a>=bt)break}}
 if(!any)return ck?-3e4+pl:0;if(TT.size>4e5)TT.clear();TT.set(h,{d,v:best,f:best<=a0?2:best>=bt?1:0,m:bm});return best}
 function srch(s,d,tm,rnd){let ms=legal(s);if(!ms.length)return null;nodes=0;stop=0;TT.clear();tEnd=performance.now()+tm;ms=sortm(s,ms);let best=[ms[0],0],all=[];
-for(let dd=1;dd<=d;dd++){const res=[];let bs=-1e9;for(const m of ms){const v=-nm(mk(s,m),dd-1,-1e9,rnd?1e9:-bs,1);if(stop)break;res.push([m,v]);if(v>bs)bs=v}
+for(let dd=1;dd<=d;dd++){const res=[];let bs=-1e9;for(const m of ms){const n0=mk(s,m),v=n0.t==s.t?nm(n0,dd-1,rnd?-1e9:bs,1e9,1):-nm(n0,dd-1,-1e9,rnd?1e9:-bs,1);if(stop)break;res.push([m,v]);if(v>bs)bs=v}
 if(stop)break;res.sort((a,b)=>b[1]-a[1]);all=res;ms=res.map(x=>x[0]);best=rnd?res.map(([m,v])=>[m,v+(Math.random()-.5)*rnd]).sort((a,b)=>b[1]-a[1])[0]:res[0]}
 return{m:best[0],v:best[1],all}}
 function think(s,L){const l=legal(s);if(l.length<2)return l[0]||null;const r=srch(s,L.d+(EW.dd||0),L.t*G.tm,L.k+EW.rnd*(L.d<4?1:.3));return r&&r.m}
@@ -483,22 +566,22 @@ let G={st:+(()=>{try{return localStorage.getItem('prizma_st')}catch(e){}})()||0,
 for(let i=0;i<64;i++){const d=document.createElement('div');sqs.push(d);bd.insertBefore(d,pl)}
 $('#lv').innerHTML=LV.map((l,i)=>`<option value="${i}"${i==7?' selected':''}>${l.n}</option>`).join('');
 $('#stl').innerHTML=STY.map((n,i)=>`<button data-i="${i}">${n}</button>`).join('');
-const sqn=i=>files[i&7]+(8-(i>>3)),key=s=>s.b.join('')+s.t+s.r+s.ep+(s.tp|0)+':'+(s.ck|0)+':'+((s.pc|0)%20)+':'+(s.sv|0)+':'+(s.vi|0)+':'+(s.lt|0)+(s.cr?s.cr.join(','):'')+(s.bm?s.bm.join(','):'');
+const sqn=i=>files[i&7]+(8-(i>>3)),key=s=>s.b.join('')+s.t+s.r+s.ep+(s.tp|0)+':'+(s.ck|0)+':'+pcx(s)+':'+(s.sv|0)+':'+(s.vi|0)+':'+(s.lt|0)+(s.cr?s.cr.join(','):'')+(s.bm?s.bm.join(','):'')+':'+(s.co==null?'':s.co)+(s.dm|0)+(s.hr|0)+(s.tw?s.tw.join(','):'')+(s.mq?s.mq.join(','):'');
 function pos(i){let r=i>>3,c=i&7;if(G.flip){r=7-r;c=7-c}return`translate(${c*100}%,${r*100}%)`}
 function layout(){for(let i=0;i<64;i++){let r=i>>3,c=i&7,vr=G.flip?7-r:r,vc=G.flip?7-c:c;const d=sqs[i];d.style.left=vc*12.5+'%';d.style.top=vr*12.5+'%';
 d.innerHTML=(vc==0?`<i>${8-r}</i>`:'')+(vr==7?`<b>${files[c]}</b>`:'')}
 els.forEach((e,i)=>e&&(e.style.transform=pos(i)))}
-function paint(){const s=G.s,ck=inchk(s),k=ck?kp(s.b,s.t):-1,tg=G.sel>=0&&G.as?G.all.filter(m=>m.f==G.sel):[];
-for(let i=0;i<64;i++){const t=tg.find(m=>(m.fl=='c'&&V960?csq(s.t,m.t>m.f).kt:m.t)==i);sqs[i].className='sq '+(((i>>3)+(i&7))%2?'d':'l')+(G.last&&(G.last[0]==i||G.last[1]==i)?' hl':'')+(G.sel==i?' sel':'')+(t?((t.fl!='c'&&s.b[i]||t.fl=='e')?' cp':t.fl=='t'?' dot tp':' dot'):'')+(i==k?' chk':'')+(G.hint&&(G.hint[0]==i||G.hint[1]==i)?' hint':'')+(G.pm&&(G.pm[0]==i||G.pm[1]==i)?' pm':'')}}
+function paint(){const s=G.s,ck=inchk(s),k=ck?kp(s.b,s.t):-1,tg=G.sel>=0&&G.as?G.all.filter(m=>m.f==G.sel&&(VR!='auc'||!!m.pay==!!G.payOn)):[];
+for(let i=0;i<64;i++){const t=tg.find(m=>(m.fl=='c'&&V960?csq(s.t,m.t>m.f).kt:m.t)==i);sqs[i].className='sq '+(((i>>3)+(i&7))%2?'d':'l')+(G.last&&(G.last[0]==i||G.last[1]==i)?' hl':'')+(G.sel==i?' sel':'')+(t?((t.fl!='c'&&s.b[i]||t.fl=='e')?' cp':(t.fl=='t'||t.pay)?' dot tp':' dot'):'')+(i==k?' chk':'')+(G.hint&&(G.hint[0]==i||G.hint[1]==i)?' hint':'')+(G.pm&&(G.pm[0]==i||G.pm[1]==i)?' pm':'')}}
 function setStyle(i){G.st=i;bd.className='bd s'+i;document.querySelectorAll('#stl button').forEach((b,j)=>b.classList.toggle('on',j==i));
 els.forEach(e=>e&&(e.innerHTML=svg(+e.dataset.p)));try{localStorage.setItem('prizma_st',i)}catch(e){}}
 function mkEl(i,p){const e=document.createElement('div');e.className='pc '+(p>0?'w':'b');e.dataset.p=p;e.innerHTML=svg(p);e.style.transform=pos(i);pl.append(e);return e}
 function stat(t){$('#st').textContent=t||(G.over?'':G.s.t==G.human?'Te következel.':'A gép gondolkodik…')}
 function burst(sq,white){let r=sq>>3,c=sq&7;if(G.flip){r=7-r;c=7-c}BW=white;emit(c*12.5+6.25,r*12.5+6.25,(FXT[G.st]||FXT[0]).bu,12,1,150);BW=0}
 function build(an){pl.innerHTML='';els=Array(64).fill(null);G.s.b.forEach((p,i)=>p&&(els[i]=mkEl(i,p)));layout();if(an)els.forEach((e,i)=>e&&e.firstChild.animate([{transform:'translateY(-70%) scale(.3)',opacity:0},{transform:'none',opacity:1}],{duration:450,delay:(i&7)*30+((i>>3)<4?3-(i>>3):(i>>3)-4)*70,easing:'cubic-bezier(.3,1.4,.5,1)',fill:'backwards'}))}
-function newGame(){closeHex();G.roul=null;G.surv=null;{const o=$('#svo');if(o)o.hidden=1}G.fogV=1;{const o=$('#fgo');if(o)o.hidden=1}let h=+$('#col').value;if(NG)h=NG.h;if(!h)h=Math.random()<.5?1:-1;G.human=h;G.flip=h<0?1:0;G.lv=+$('#lv').value;G.fen=NG&&NG.fen||null;{let vv=NG&&NG.v!=null?NG.v:G.fen?'n':$('#vr').value;if(vv=='hex'||vv=='surv')vv='n';setV(vv);if(!G.fen&&vv!='n')G.fen=vFen(vv,h,NG?NG.md:$('#md').value);G.v=vv}G.s=G.fen?fromFen(G.fen):init();G.cf={...CF};G.bm0=VR=='bomb'?bmInit(G.s,NG&&NG.bm):null;if(G.bm0)G.s.bm=G.bm0.slice();G.hist=[key(G.s)];G.mv=[];G.ml=[];G.hint=null;G.ro=0;inAna=0;AN=null;G.eng=+$('#eng').value;G.tm=+$('#tm').value;G.as=+$('#as').value;G.cheat=0;G.opp=oppR();G.tk=(G.tk||0)+1;VW=null;G.pm=null;G.pz=null;G.mode=NG?NG.md:$('#md').value;G.names=NG?NG.names:null;G.net=NG?NG.net:null;G.eg=NG&&NG.eg!=null?NG.eg:-1;G.pl=NG&&NG.pl||null;NG=null;initClk();if($('#vs').value=='1')bump('blind');if(G.mode=='p2p'||G.mode=='li')G.clk=null;G.last=null;G.sel=-1;G.over=0;G.busy=0;G.all=legal(G.s);
+function newGame(){closeHex();G.roul=null;G.surv=null;{const o=$('#svo');if(o)o.hidden=1}G.fogV=1;{const o=$('#fgo');if(o)o.hidden=1}let h=+$('#col').value;if(NG)h=NG.h;if(!h)h=Math.random()<.5?1:-1;G.human=h;G.flip=h<0?1:0;G.lv=+$('#lv').value;G.fen=NG&&NG.fen||null;{let vv=NG&&NG.v!=null?NG.v:G.fen?'n':$('#vr').value;if(vv=='hex'||vv=='surv')vv='n';setV(vv);if(!G.fen&&vv!='n')G.fen=vFen(vv,h,NG?NG.md:$('#md').value);G.v=vv}G.s=G.fen?fromFen(G.fen):init();G.cf={...CF};G.bm0=bmInit(G.s,NG&&NG.bm);if(G.bm0)bmS(G.s,G.bm0);G.hist=[key(G.s)];G.mv=[];G.ml=[];G.hint=null;G.ro=0;inAna=0;AN=null;G.eng=+$('#eng').value;G.tm=+$('#tm').value;G.as=+$('#as').value;G.cheat=0;G.opp=oppR();G.tk=(G.tk||0)+1;VW=null;G.pm=null;G.pz=null;G.mode=NG?NG.md:$('#md').value;G.names=NG?NG.names:null;G.net=NG?NG.net:null;G.eg=NG&&NG.eg!=null?NG.eg:-1;G.pl=NG&&NG.pl||null;NG=null;initClk();if($('#vs').value=='1')bump('blind');if(G.mode=='p2p'||G.mode=='li')G.clk=null;G.last=null;G.sel=-1;G.over=0;G.busy=0;G.all=legal(G.s);
 $('#ov').classList.remove('show');$('#mv').innerHTML='';build(1);paint();stat();sav();bd.animate([{transform:'scale(.94) rotateX(18deg)',opacity:.3},{transform:'none',opacity:1}],{duration:600,easing:'ease-out'});if(G.s.t!=G.human)setTimeout(eng,900)}
-function nt(s,m){const p=Math.abs(s.b[m.f]);return(m.bw?'🔮':'')+(m.fl=='t'?'⚡'+'PNBRQK'[p-1].replace('P','')+sqn(m.f)+'-'+sqn(m.t):m.fl=='c'?(m.t>m.f?'O-O':'O-O-O'):'PNBRQK'[p-1].replace('P','')+sqn(m.f)+(m.cp?'x':'-')+sqn(m.t)+(m.p?'='+{5:'Q',4:'R',3:'B',2:'N'}[m.p]:''))}
+function nt(s,m){const p=Math.abs(s.b[m.f]);return(m.pay?'💰':'')+(m.bw?'🔮':'')+(m.fl=='t'?'⚡'+'PNBRQK'[p-1].replace('P','')+sqn(m.f)+'-'+sqn(m.t):m.fl=='c'?(m.t>m.f?'O-O':'O-O-O'):'PNBRQK'[p-1].replace('P','')+sqn(m.f)+(m.cp?'x':'-')+sqn(m.t)+(m.p?'='+{5:'Q',4:'R',3:'B',2:'N'}[m.p]:''))}
 function doMove(m){const s=G.s,p=s.b[m.f],cs=m.fl=='e'?m.t+8*s.t:m.t,cap=m.fl=='c'?0:s.b[cs],txt=nt(s,m);let ce=null;
 if(cap){ce=els[cs];els[cs]=null}const e=els[m.f];els[m.f]=null;
 if(ce){burst(m.t,cap>0);ce.style.zIndex=1;vicA(ce).onfinish=()=>ce.remove()}
@@ -506,7 +589,7 @@ const cz=m.fl=='c'?csq(s.t,m.t>m.f):null,tt=cz?cz.kt:m.t,re=cz?els[cz.rf]:null;i
 if(cz&&re){els[cz.rt]=re;re.style.transform=pos(cz.rt)}
 if(m.fl=='t')e.firstChild.animate([{transform:'scale(1)',opacity:1},{transform:'scale(.1) rotate(200deg)',opacity:0,offset:.4},{transform:'scale(1)',opacity:1}],{duration:650});
 if(m.p)setTimeout(()=>{e.dataset.p=m.p*s.t;e.innerHTML=svg(m.p*s.t);e.firstChild.animate([{transform:'scale(.3) rotate(90deg)'},{transform:'scale(1)'}],{duration:350})},300);
-const n=mk(s,m);G.s=n;G.hint=null;G.ml.push([m.f,m.t,m.p||0]);if(G.clk&&G.inc)G.clk[s.t>0?0:1]+=G.inc;if(G.net&&!G.rem)G.net(m);snd(m);fx(m,s,n);if(VR=='atom'&&(m.cp||m.fl=='e'))boom(m,n);if(n.sh)shAnim(n);if(n.ex>=0)boom({t:n.ex},n);if(n.rv&&n.rv.length)revFx(n);if(n.pf&&n.pf.length)fallFx(n);if(VR=='bill'&&(m.cp||m.fl=='e'))waveFx(m.t);if(VR=='soul'&&(m.cp||m.fl=='e'))soulFx(m,s);if(VR=='crater'&&(m.cp||m.fl=='e'))craterFx(m.t);if(G.pm&&n.t==G.human)setTimeout(runPm,160);if(FG()&&G.mode=='duo')fogPass(n);G.sel=-1;G.last=[m.f,m.t];G.all=legal(n);G.hist.push(key(n));
+const n=mk(s,m);G.s=n;G.hint=null;G.ml.push([m.f,m.t,m.p||0,m.pay?1:0]);if(G.clk&&G.inc)G.clk[s.t>0?0:1]+=G.inc;if(G.net&&!G.rem)G.net(m);const _vn=VR;if(RLR)VR=ruleOf(s);snd(m);fx(m,s,n);if(VR=='atom'&&(m.cp||m.fl=='e'))boom(m,n);if(n.sh)shAnim(n);if(n.ex>=0)boom({t:n.ex},n);if(n.rv&&n.rv.length)revFx(n);if(n.pf&&n.pf.length)fallFx(n);if(VR=='bill'&&(m.cp||m.fl=='e'))waveFx(m.t);if(VR=='soul'&&(m.cp||m.fl=='e'))soulFx(m,s);if(VR=='crater'&&(m.cp||m.fl=='e'))craterFx(m.t);if(n.cw)crownFx(n);if(n.tv>=0)twFx(n);if(VR=='lvl'&&(m.cp||m.fl=='e'))lvlFx(m,s,n);if(VR=='cyl')cylFx(m,s);VR=_vn;if(RLR)chaosTick(s,n);G.payOn=0;if(G.pm&&n.t==G.human)setTimeout(runPm,160);if((FG()||VR=='mask')&&G.mode=='duo')fogPass(n);G.sel=-1;G.last=[m.f,m.t];G.all=legal(n);G.hist.push(key(n));
 const ck=inchk(n),lm=G.all.length;G.mv.push(txt+(ck?(lm?'+':'#'):''));
 $('#mv').innerHTML=FG()&&!G.over?'<i>Köd: a lépéslista a játszma végén jelenik meg.</i>':G.mv.map((x,i)=>i%2?x+'<br>':`${i/2+1}. ${x} `).join('');$('#mv').scrollTop=1e5;paint();
 if(ck){bd.animate([{transform:'translate(0)'},{transform:'translate(-5px,2px)'},{transform:'translate(5px,-2px)'},{transform:'translate(0)'}],{duration:300,delay:280});
@@ -530,7 +613,7 @@ statsUpd(res,why,unr);showRt();const d=Math.round(GL.r-old);archive(res,why,{r0:
 $('#ov').innerHTML=`<div><b>${res==0?'Döntetlen':res==G.human?'Győzelem!':'Vereség'}</b><br><small style="color:#8e9ab8">${why}<br>${unr?'Nem értékelt játszma ('+(G.mode!='ai'?'társasjáték':G.fen?'egyedi kezdőállás':G.cheat?'tipp vagy visszavonás':'túl korai feladás')+')':`Pontszám: ${Math.round(GL.r)} (${d>=0?'+':''}${d}), várható eredmény: ${Math.round(ex*100)}%`}</small><br><br><button onclick="newGame()">Új játszma</button>${hv?` <button onclick="openAna(LS('seakk_arch',[])[0])">Elemzés</button> <button onclick="showPGN(LS('seakk_arch',[])[0])">PGN</button> <button onclick="toLichess(LS('seakk_arch',[])[0])">Lichess</button>`:''}</div>`;
 $('#ov').classList.add('show');try{$('#ov').firstChild.animate([{transform:'scale(.5) rotate(-8deg)',opacity:0},{transform:'none',opacity:1}],{duration:500,easing:'cubic-bezier(.3,1.5,.5,1)'})}catch(e){}stat(' ');if(res==G.human)confetti()}
 bd.onpointerdown=ev=>{if(G.mode=='duo')G.human=G.s.t;if(G.ro||G.over)return;const pmode=G.s.t!=G.human||G.busy;if(pmode&&(G.mode=='duo'||G.pz||(G.busy&&G.s.t==G.human)))return;const r=bd.getBoundingClientRect();let c=Math.floor((ev.clientX-r.left)/r.width*8),rw=Math.floor((ev.clientY-r.top)/r.height*8);if(G.flip){c=7-c;rw=7-rw}const i=rw*8+c;if(pmode){pmClick(i);return}
-if(G.sel>=0){const ms=G.all.filter(m=>m.f==G.sel&&(m.t==i||m.fl=='c'&&V960&&csq(G.s.t,m.t>m.f).kt==i));if(G.pz&&ms[0])return pzMove(ms);if(ms.length>1&&ms[0].p){promo(ms);return}if(ms[0])return doMove(ms[0])}
+if(G.sel>=0){const ms=G.all.filter(m=>m.f==G.sel&&(m.t==i||m.fl=='c'&&V960&&csq(G.s.t,m.t>m.f).kt==i)&&(VR!='auc'||!!m.pay==!!G.payOn));if(G.pz&&ms[0])return pzMove(ms);if(ms.length>1&&ms[0].p){promo(ms);return}if(ms[0])return doMove(ms[0])}
 G.sel=G.s.b[i]*G.human>0?i:-1;paint()};
 $('#nw').onclick=()=>{const v=$('#vr').value;v=='hex'?openHex():v=='surv'?survStart():newGame()};$('#fl').onclick=()=>{G.flip^=1;layout();paint()};
 $('#rs').onclick=()=>{if(!G.over&&G.s)end(-G.human,'Feladtad')};
@@ -543,12 +626,12 @@ const _an=Element.prototype.animate;Element.prototype.animate=function(k,o){retu
 function sav(){if(G.surv||G.ro||G.over||G.pz||G.mode=='p2p'||G.mode=='li')return;SV('seakk_cur',{eg:G.eg,fen:G.fen,v:G.v,rl:G.roul,bm:G.bm0,md:G.mode,h:G.mode=='duo'?1:G.human,lv:G.lv,eng:G.eng,x:G.cheat,o:G.opp,k:G.clk,i:G.inc,ml:G.ml})}
 function archive(res,why,x){try{localStorage.removeItem('seakk_cur')}catch(e){}if(G.ro||!G.ml.length)return;const a=LS('seakk_arch',[]);a.unshift(Object.assign({d:Date.now(),h:G.human,lv:G.lv,eng:G.eng,ml:G.ml,fen:G.fen,v:G.v,bm:G.bm0,res,why},x));SV('seakk_arch',a.slice(0,40))}
 function listMoves(){$('#mv').innerHTML=FG()&&!G.over?'<i>Köd: a lépéslista a játszma végén jelenik meg.</i>':G.mv.map((x,i)=>i%2?x+'<br>':`${i/2+1}. ${x} `).join('');$('#mv').scrollTop=1e5}
-function ld(c,upto,ro){G.surv=null;{const o=$('#svo');if(o)o.hidden=1}setV(c.v);G.v=c.v||'n';G.roul=c.rl||null;G.human=c.h;G.flip=c.h<0?1:0;G.lv=c.lv;G.eng=c.eng;G.fen=c.fen||null;G.s=G.fen?fromFen(G.fen):init();G.cf={...CF};G.bm0=c.bm||null;if(G.bm0)G.s.bm=G.bm0.slice();G.hist=[key(G.s)];G.mv=[];G.ml=[];G.last=null;G.sel=-1;G.over=0;G.busy=0;G.hint=null;G.ro=0;G.cheat=c.x||0;G.opp=c.o||oppR();G.clk=c.k||null;G.inc=c.i||0;G.t0=Date.now();G.pz=null;G.tk=(G.tk||0)+1;G.mode=c.md||'ai';G.pm=null;G.eg=c.eg!=null?c.eg:-1;G.pl=null;
-for(const[f,t,p]of c.ml.slice(0,upto==null?c.ml.length:upto)){const m=legal(G.s).find(x=>x.f==f&&x.t==t&&(!x.p||x.p==(p||5)));if(!m)break;const tx=nt(G.s,m);G.s=mk(G.s,m);G.ml.push([f,t,p]);G.last=[f,t];G.hist.push(key(G.s));const ck=inchk(G.s);G.mv.push(tx+(ck?(legal(G.s).length?'+':'#'):''))}
+function ld(c,upto,ro){G.surv=null;{const o=$('#svo');if(o)o.hidden=1}setV(c.v);G.v=c.v||'n';G.roul=c.rl||null;G.human=c.h;G.flip=c.h<0?1:0;G.lv=c.lv;G.eng=c.eng;G.fen=c.fen||null;G.s=G.fen?fromFen(G.fen):init();G.cf={...CF};G.bm0=c.bm||null;if(G.bm0)bmS(G.s,G.bm0);G.hist=[key(G.s)];G.mv=[];G.ml=[];G.last=null;G.sel=-1;G.over=0;G.busy=0;G.hint=null;G.ro=0;G.cheat=c.x||0;G.opp=c.o||oppR();G.clk=c.k||null;G.inc=c.i||0;G.t0=Date.now();G.pz=null;G.tk=(G.tk||0)+1;G.mode=c.md||'ai';G.pm=null;G.eg=c.eg!=null?c.eg:-1;G.pl=null;
+for(const[f,t,p,py]of c.ml.slice(0,upto==null?c.ml.length:upto)){const m=legal(G.s).find(x=>x.f==f&&x.t==t&&(!x.p||x.p==(p||5))&&!!x.pay==!!py);if(!m)break;const tx=nt(G.s,m);G.s=mk(G.s,m);G.ml.push([f,t,p,py]);G.last=[f,t];G.hist.push(key(G.s));const ck=inchk(G.s);G.mv.push(tx+(ck?(legal(G.s).length?'+':'#'):''))}
 G.all=legal(G.s);$('#ov').classList.remove('show');build();paint();listMoves();if(ro){G.ro=1;G.over=1}}
 function resume(){const c=LS('seakk_cur',null);if(c&&c.ml&&c.ml.length){ld(c);stat();if(G.s.t!=G.human)setTimeout(eng,500)}else newGame()}
 function undo(){if(G.surv)return toast('A túlélő módban nincs visszavonás.');if(G.over||G.ro||G.busy||G.mode!='ai'||!G.ml.length)return;const n=G.s.t==G.human?2:1;ld({fen:G.fen,v:G.v,rl:G.roul,bm:G.bm0,h:G.human,lv:G.lv,eng:G.eng,x:1,o:G.opp,k:G.clk,i:G.inc,md:G.mode,ml:G.ml.slice(0,Math.max(0,G.ml.length-n))});sav();stat();if(G.s.t!=G.human)setTimeout(eng,400)}
-async function tip(){if(FG())return toast('Ködben nincs tipp.');if(G.over||G.ro||G.mode!='ai'||G.s.t!=G.human||G.busy)return;const tk=G.tk,r=await srchA(G.s,5,800,0,ENG[0]);if(r&&tk==G.tk&&!G.over&&!G.ro){G.sel=-1;G.hint=[r.m.f,r.m.t];G.cheat=1;sav();paint()}}
+async function tip(){if(FG()||VR=='mask')return toast('Ködben nincs tipp.');if(G.over||G.ro||G.mode!='ai'||G.s.t!=G.human||G.busy)return;const tk=G.tk,r=await srchA(G.s,5,800,0,ENG[0]);if(r&&tk==G.tk&&!G.over&&!G.ro){G.sel=-1;G.hint=[r.m.f,r.m.t];G.cheat=1;sav();paint()}}
 const _pt=paint;paint=function(){_pt();els.forEach((e,i)=>e&&e.classList.toggle('up',i==G.sel));vxApply()};
 const _b=burst;burst=function(sq,w){_b(sq,w);let r=sq>>3,c=sq&7;if(G.flip){r=7-r;c=7-c}const e=document.createElement('div');e.style.cssText=`position:absolute;left:${c*12.5}%;top:${r*12.5}%;width:12.5%;height:12.5%;border-radius:50%;border:3px solid #4fd8ff;z-index:5;pointer-events:none`;pl.append(e);e.animate([{transform:'scale(.3)',opacity:.9},{transform:'scale(2.6)',opacity:0}],{duration:600}).onfinish=()=>e.remove()};
 function confetti(){const Q=FXT[G.st]||FXT[0],cl=Q.cf,sh={4:'width:10px;height:14px;border-radius:50% 0',6:'width:9px;height:13px;border-radius:50% 0 50% 0',8:'width:9px;height:9px;border-radius:50%',9:'width:7px;height:7px;border-radius:50%;box-shadow:0 0 8px #ff6a3d',1:'width:8px;height:8px',2:'width:9px;height:9px;transform:rotate(45deg)'}[G.st]||'width:8px;height:12px',up=G.st==9;for(let i=0;i<60;i++){const e=document.createElement('div');e.style.cssText=`position:absolute;left:${Math.random()*100}%;${up?'bottom':'top'}:-4%;${sh};background:${cl[i%cl.length]};z-index:20;pointer-events:none`;bd.append(e);e.animate([{transform:'translateY(0) rotate(0)',opacity:1},{transform:`translate(${(Math.random()-.5)*(G.st==8||G.st==6||G.st==4?200:120)}px,${(up?-1:1)*bd.clientHeight*1.1}px) rotate(${Math.random()*900}deg)`,opacity:.8}],{duration:(G.st==8?2600:1800)+Math.random()*1500,delay:Math.random()*600,easing:G.st==8||G.st==6?'ease-in-out':'ease-in'}).onfinish=()=>e.remove()}}
@@ -596,8 +679,8 @@ const c=LS('seakk_cur',null);if(c&&c.ml&&c.ml.length){$('#lv').value=c.lv;$('#en
 
 
 /* ---- Variánsok: Chess960, hendikep, teleport ---- */
-const V4=['koth','3chk','atom','fog','tt','blind','soul','grav','crater','vip','bomb','mirror','rev','bill'],VNM={soul:'Lélekvándorlás',grav:'Gravitációs sakk',crater:'Kráter-sakk',vip:'Királyi testőrség',bomb:'Időzített bomba',mirror:'Tükör-sakk',rev:'Reversi-sakk',bill:'Biliárd-sakk',koth:'Király a hegyen','3chk':'Három sakk',atom:'Atomi sakk',fog:'Ködös sakk',tt:'Időugrás',blind:'Vak-zóna','960':'Chess960',tp:'Teleport sakk'};
-function setV(v,cf){VT=v=='tp'?1:0;VR=V4.includes(v)?v:'';setCF(cf||{k:4,q:0,h:7},v=='960')}
+const V4=['koth','3chk','atom','fog','tt','blind','soul','grav','crater','vip','bomb','mirror','rev','bill','cyl','heir','tide','rot','twin','lvl','quake','auc','mask','chaos'],VNM={soul:'Lélekvándorlás',grav:'Gravitációs sakk',crater:'Kráter-sakk',vip:'Királyi testőrség',bomb:'Időzített bomba',mirror:'Tükör-sakk',rev:'Reversi-sakk',bill:'Biliárd-sakk',cyl:'Henger',heir:'Királyjelölt',tide:'Dagály',rot:'Forgó tábla',twin:'Ikerbábuk',lvl:'Szintlépés-sakk',quake:'Földrengés',auc:'Árverés-sakk',mask:'Maszkabál',chaos:'Szabály-rulett',koth:'Király a hegyen','3chk':'Három sakk',atom:'Atomi sakk',fog:'Ködös sakk',tt:'Időugrás',blind:'Vak-zóna','960':'Chess960',tp:'Teleport sakk'};
+function setV(v,cf){VT=v=='tp'?1:0;RLR=v=='chaos'?1:0;VR=V4.includes(v)&&v!='chaos'?v:'';setCF(cf||{k:4,q:0,h:7},v=='960')}
 function r9(b,c){const wk=b.indexOf(6)-56;let q=-1,h=-1;if(wk>=0&&wk<8){for(let x=0;x<wk;x++)if(b[56+x]==4){q=x;break}for(let x=7;x>wk;x--)if(b[56+x]==4){h=x;break}setCF({k:wk,q:q<0?0:q,h:h<0?7:h},1)}
 return(c.includes('K')&&h>=0&&b[56+CF.k]==6?1:0)|(c.includes('Q')&&q>=0&&b[56+CF.k]==6?2:0)|(c.includes('k')&&h>=0&&b[CF.k]==-6&&b[CF.h]==-4?4:0)|(c.includes('q')&&q>=0&&b[CF.k]==-6&&b[CF.q]==-4?8:0)}
 function f960(){const a=Array(8).fill(0),pk=x=>x[Math.random()*x.length|0];let fr=[0,1,2,3,4,5,6,7];const put=(x,y)=>{a[x]=y;fr=fr.filter(z=>z!=x)};
@@ -662,7 +745,7 @@ if(v>bs){bs=v;best=m}}return best}
 return{NM,COL,STK,ow,ty,init,legal,ap,result,bot,inCheck,kpos}})();
 
 /* ---- Hatszögsakk: felület ---- */
-const HXR=[1,.825,.65,.475,.3],HSZ=100;let HS=null;
+const HXR=[1,.79,.6,.42,0],HSZ=100;let HS=null;
 const hm24=p=>((p%24)+24)%24,hV=k=>{const a=(210+60*k)*Math.PI/180;return[Math.cos(a),-Math.sin(a)]};
 function hpt(p,rho){p=hm24(p);const k=Math.floor(p/4),t=(p%4)/4,a=hV(k),b=hV(k+1);return[(a[0]*(1-t)+b[0]*t)*rho*HSZ,(a[1]*(1-t)+b[1]*t)*rho*HSZ]}
 function closeHex(){$('#hx').hidden=1;$('#bd').hidden=0;$('#st').hidden=0;if(HS)HS.tk++}
@@ -672,16 +755,16 @@ function hexInfo(){const S=HS.s,o=S.t;$('#hxt').textContent=HS.over?'':HX.NM[o]+
 function hexDraw(){const S=HS.s,tg=HS.lm.filter(m=>m.f==HS.sel);let h='',pcs='',ov='';
 const ck=HX.inCheck(S,S.t)?HX.kpos(S.b,S.t):-1;
 for(let r=0;r<4;r++)for(let p=0;p<24;p++){const c=r*24+p,P=[hpt(p,HXR[r]),hpt(p+1,HXR[r]),hpt(p+1,HXR[r+1]),hpt(p,HXR[r+1])],
-pts=P.map(a=>a[0].toFixed(1)+','+a[1].toFixed(1)).join(' '),cx=(P[0][0]+P[1][0]+P[2][0]+P[3][0])/4,cy=(P[0][1]+P[1][1]+P[2][1]+P[3][1])/4,
-w=Math.hypot(P[0][0]-P[1][0],P[0][1]-P[1][1]),hh=Math.hypot(P[0][0]-P[3][0],P[0][1]-P[3][1]),sc=Math.min(w,hh*1.15)*1.02/45;
+pts=P.map(a=>a[0].toFixed(1)+','+a[1].toFixed(1)).join(' '),cx=r==3?(P[0][0]+P[1][0])*.3:(P[0][0]+P[1][0]+P[2][0]+P[3][0])/4,cy=r==3?(P[0][1]+P[1][1])*.3:(P[0][1]+P[1][1]+P[2][1]+P[3][1])/4,
+w=Math.hypot(P[0][0]-P[1][0],P[0][1]-P[1][1]),hh=Math.hypot(P[0][0]-P[3][0],P[0][1]-P[3][1]),sc=Math.min(w*(r==3?1.3:1),hh*1.15)*1.02/45;
 h+=`<polygon data-c="${c}" points="${pts}" fill="${(r+p)%2?'#6f88b8':'#c9d6ee'}" stroke="#0b1538" stroke-width=".5"/>`;
 if(S.last&&(S.last[0]==c||S.last[1]==c))ov+=`<polygon points="${pts}" fill="#ffd54a" opacity=".45" pointer-events="none"/>`;
 if(c==HS.sel)ov+=`<polygon points="${pts}" fill="none" stroke="#4fd8ff" stroke-width="1.6" pointer-events="none"/>`;
 if(c==ck)ov+=`<polygon points="${pts}" fill="#ff4d5e" opacity=".6" pointer-events="none"/>`;
 const pc=S.b[c];if(pc){const o=HX.ow(pc),t=HX.ty(pc);pcs+=`<g transform="translate(${cx.toFixed(1)} ${cy.toFixed(1)}) scale(${sc.toFixed(3)}) translate(-22.5 -22.5)" pointer-events="none"><path d="${R[t]}" fill="${HX.COL[o]}" stroke="${HX.STK[o]}" stroke-width="1.6" stroke-linejoin="round"/></g>`}
 const m=tg.find(x=>x.t==c);if(m)ov+=pc?`<circle cx="${cx}" cy="${cy}" r="${Math.min(w,hh)*.46}" fill="none" stroke="#ff4d5e" stroke-width="1.5" pointer-events="none"/>`:`<circle cx="${cx}" cy="${cy}" r="${Math.min(w,hh)*.18}" fill="#1e6bff" opacity=".85" pointer-events="none"/>`}
-$('#hxs').innerHTML=`<polygon points="${[0,1,2,3,4,5].map(k=>hV(k).map(x=>x*HSZ*1.04).join(',')).join(' ')}" fill="#0b1538" stroke="#1e3a8a" stroke-width="1.5"/>`+h+`<polygon points="${[0,1,2,3,4,5].map(k=>hV(k).map(x=>x*HSZ*HXR[4]).join(',')).join(' ')}" fill="#050b20" stroke="#1e3a8a" stroke-width=".8"/>`+ov+pcs+
-`<circle cx="0" cy="0" r="9" fill="${HX.COL[S.t]}" stroke="#4fd8ff" stroke-width="1.2"/>`}
+$('#hxs').innerHTML=`<polygon points="${[0,1,2,3,4,5].map(k=>hV(k).map(x=>x*HSZ*1.04).join(',')).join(' ')}" fill="#0b1538" stroke="#1e3a8a" stroke-width="1.5"/>`+h+ov+pcs+
+`<circle cx="0" cy="0" r="4.5" fill="${HX.COL[S.t]}" stroke="#4fd8ff" stroke-width="1" pointer-events="none"/>`}
 function hexClick(c){if(!HS||HS.over||HS.bot[HS.s.t])return;const S=HS.s,pc=S.b[c],m=HS.lm.find(x=>x.f==HS.sel&&x.t==c);
 if(m)return hexMove(m);HS.sel=pc&&HX.ow(pc)==S.t?c:-1;hexDraw()}
 function hexMove(m){const S=HS.s,prev=S.t;tone(S.b[m.t]?260:380,.12);HS.s=HX.ap(S,m);HS.sel=-1;HS.lm=HX.legal(HS.s);
@@ -776,8 +859,8 @@ function fogVis(s,side){const v=new Set(),s2=Object.assign({},s,{t:side});for(le
 for(const m of gen(s2))v.add(m.t);if(VR=='blind')for(let i=0;i<64;i++)if(side>0?i>=32:i<32)v.add(i);return v}
 function vxApply(){const s=G.s;if(!s)return;survHud();vx2(s);
 for(const i of[27,28,35,36])sqs[i].classList.toggle('hill',VR=='koth');
-const c3=$('#c3');if(c3){c3.hidden=VR!='3chk'&&VR!='tt'&&!VX.includes(VR);if(VR=='3chk'){const w=(s.ck|0)&3,b=((s.ck|0)>>2)&3;c3.innerHTML=`<span title="Világos">♔ ${w}/3</span> <span title="Sötét">♚ ${b}/3</span>`}
-else if(VX.includes(VR))c3.innerHTML=vxHud(s);else if(VR=='tt'){const pc=s.pc|0;c3.innerHTML=`⏳ Időugrásig: <b>${10-pc%10}</b> lépés · ${(((pc/10)|0)+1)&1?'↑ előre':'↓ hátra'}`}}
+const c3=$('#c3');if(c3){c3.hidden=VR!='3chk'&&VR!='tt'&&!VX.includes(VR)&&!RLR;if(VR=='3chk'){const w=(s.ck|0)&3,b=((s.ck|0)>>2)&3;c3.innerHTML=`<span title="Világos">♔ ${w}/3</span> <span title="Sötét">♚ ${b}/3</span>`}
+else if(RLR)c3.innerHTML='<div style="text-align:center">'+chaosHud(s)+'</div>';else if(VX.includes(VR))c3.innerHTML='<div style="text-align:center">'+vxHud(s)+'</div>';else if(VR=='tt'){const pc=s.pc|0;c3.innerHTML=`⏳ Időugrásig: <b>${10-pc%10}</b> lépés · ${(((pc/10)|0)+1)&1?'↑ előre':'↓ hátra'}`}}
 if(!FG()){if(G._fg){sqs.forEach(q=>q.classList.remove('fog'));els.forEach(e=>e&&(e.style.visibility=''));G._fg=0}return}
 const on=fogOn(),vw=fogView(),vis=on?fogVis(s,vw):null;G._fg=1;
 for(let i=0;i<64;i++){const hid=!!vis&&!vis.has(i);sqs[i].classList.toggle('fog',hid);if(hid)sqs[i].classList.remove('hl','hint','pm');const e=els[i];if(e)e.style.visibility=hid?'hidden':''}}
@@ -812,10 +895,12 @@ $('#edai').onclick=()=>edStart('ai');$('#eduo').onclick=()=>edStart('duo');
 
 /* ---- Időugrás, Vak-zóna, Túlélő mód ---- */
 const FG=()=>VR=='fog'||VR=='blind';
-function shAnim(n){const sh=n.sh;if(!sh||!sh.length)return;const g=VR=='grav'||VR=='bill',mv=[];for(let i=0;i<sh.length;i+=2)mv.push([sh[i],sh[i+1]]);const es=mv.map(([f])=>els[f]);mv.forEach(([f])=>{els[f]=null});
-mv.forEach(([f,q],k)=>{const e=es[k];if(!e)return;els[q]=e;setTimeout(()=>{e.style.transform=pos(q);if(!g)e.animate([{filter:'brightness(2.4) hue-rotate(70deg)'},{filter:'none'}],{duration:700})},g?380:560)});
-if(g)return;const up=((((n.pc|0)/10)&1)==1);spawn(`left:50%;top:50%;font-size:${bd.clientWidth/6}px;line-height:1;color:#4fd8ff;text-shadow:0 0 18px #1e6bff;z-index:6;white-space:nowrap`,[{transform:'translate(-50%,-50%) scale(.4)',opacity:0},{transform:'translate(-50%,-50%) scale(1)',opacity:1,offset:.3},{transform:'translate(-50%,-50%) scale(1.1)',opacity:1,offset:.7},{transform:'translate(-50%,-50%) scale(1.4)',opacity:0}],1300,{delay:300}).textContent=up?'⏳↑':'⏳↓';
-bd.animate([{filter:'none'},{filter:'hue-rotate(60deg) brightness(1.4)',offset:.4},{filter:'none'}],{duration:900,delay:450})}
+function shAnim(n){const sh=n.sh;if(!sh||!sh.length)return;const g=VR=='grav'||VR=='bill',dl=g?380:560,mv=[];for(let i=0;i<sh.length;i+=2)mv.push([sh[i],sh[i+1]]);
+const es=mv.map(([f])=>els[f]);mv.forEach(([f])=>{els[f]=null});
+mv.forEach(([f,q],k)=>{const e=es[k];if(!e)return;els[q]=e;setTimeout(()=>{e.style.transform=pos(q);if(!g)e.animate([{filter:'brightness(2.4) hue-rotate(70deg)'},{filter:'none'}],{duration:700})},dl)});
+if(n.pq)for(const q of n.pq)setTimeout(()=>{if(G.s!==n)return;const o=els[q];if(o)o.remove();const ne=mkEl(q,n.b[q]);els[q]=ne;ne.firstChild.animate([{transform:'scale(.2)'},{transform:'scale(1)'}],{duration:400})},dl+500);
+if(g)return;bannerFx(VR=='rot'?'⟳':VR=='quake'?'🌋':((((n.pc|0)/10)&1)==1?'⏳↑':'⏳↓'),'#4fd8ff');
+bd.animate([{filter:'none'},{filter:'hue-rotate(60deg) brightness(1.4)',offset:.4},{filter:'none'}],{duration:900,delay:450});if(VR=='quake')shake(9)}
 const survLv=w=>Math.min(LV.length-1,Math.floor(1+w*.9)),SVBASE=()=>{const b=Array(64).fill(0);b[60]=6;b[51]=b[52]=b[53]=1;b[62]=2;b[58]=3;return b};
 function survPlace(wb,wave){const W=[[1,1,3],[2,3,2],[3,3,2],[4,5,wave>=3?1:0],[5,9,wave>=5?1:0]];
 for(let tr=0;tr<120;tr++){const b=wb.slice();let bud=3+3*wave,cnt=0;
@@ -841,11 +926,23 @@ $('#ov').innerHTML=`<div><b>Vége a túlélő futamnak</b><br><small style="colo
 $('#ov').classList.add('show');stat(' ');if(nb&&S.cleared)confetti()}
 
 /* ---- Lélekvándorlás, Gravitáció, Kráter, VIP, Bomba, Tükör ---- */
-const VX=['soul','grav','crater','vip','bomb','mirror','rev','bill'],GLY='♟♞♝♜♛♚';
-const bmInit=(s,g)=>{if(g)return g.slice();const pk=q=>{const a=[];for(let i=0;i<64;i++)if(s.b[i]*q>0&&Math.abs(s.b[i])!=6)a.push(i);return a.length?a[Math.random()*a.length|0]:-1};return[pk(1),5,pk(-1),5]};
-const bmS=(s,bm)=>{if(bm)s.bm=bm.slice();return s};
-const bmOk=a=>Array.isArray(a)&&a.length==4&&[0,2].every(i=>Number.isInteger(a[i])&&a[i]>=-1&&a[i]<64)&&a[1]===5&&a[3]===5?a:null;
-function vxHud(s){const t=s.t;
+const VX=['soul','grav','crater','vip','bomb','mirror','rev','bill','cyl','heir','tide','rot','twin','lvl','quake','auc','mask'],GLY='♟♞♝♜♛♚';
+const bmOk0=a=>Array.isArray(a)&&a.length==4&&[0,2].every(i=>Number.isInteger(a[i])&&a[i]>=-1&&a[i]<64)&&a[1]===5&&a[3]===5?a:null;
+const MQTOK='<svg viewBox="0 0 45 45"><circle cx="22.5" cy="22.5" r="17" fill="#2a3350" stroke="#7b2bff" stroke-width="2.5"/><text x="22.5" y="30.5" text-anchor="middle" font-size="22" font-weight="800" fill="#e6c8ff" font-family="system-ui">?</text></svg>';
+const bmInit=(s,g,v,fresh)=>{if(g)return g;v=v||G.v;const sh=a=>a.sort(()=>Math.random()-.5);
+if(v=='bomb'){const pk=q=>{const a=[];for(let i=0;i<64;i++)if(s.b[i]*q>0&&Math.abs(s.b[i])!=6)a.push(i);return a.length?a[Math.random()*a.length|0]:-1};return[pk(1),5,pk(-1),5]}
+if(v=='twin'){const mk8=q=>{const a=[];for(let i=0;i<64;i++)if(s.b[i]*q>0&&Math.abs(s.b[i])!=6)a.push(i);return sh(a).slice(0,Math.min(8,a.length&~1))};const w=mk8(1);let bl;if(w.every(q=>s.b[q^56]<0&&Math.abs(s.b[q^56])!=6))bl=w.map(q=>q^56);else bl=mk8(-1);return{tw:w.concat(bl)}}
+if(v=='mask'){if(G.fen&&!fresh){const lo=[0,0];for(let i=0;i<64;i++)if((i<8||i>55)&&s.b[i]&&Math.abs(s.b[i])!=6){if(i<32)lo[0]|=1<<i;else lo[1]|=1<<(i-32)}return{mq:[lo[0]>>>0,lo[1]>>>0]}}
+const row=()=>{const a=sh([4,2,3,5,3,2,4]);return[a[0],a[1],a[2],a[3],6,a[4],a[5],a[6]]};return{bw:row(),bb:row()}}
+if(v=='quake'||v=='chaos')return{sd:(Math.random()*1e9)|0};return null};
+const bmS=(s,x)=>{if(!x)return s;if(Array.isArray(x)){s.bm=x.slice();return s}
+if(x.tw)s.tw=x.tw.slice();if(x.sd!=null)s.sd=x.sd;if(x.mq)s.mq=x.mq.slice();
+if(x.bw&&x.bb){for(let c=0;c<8;c++){s.b[56+c]=x.bw[c];s.b[c]=-x.bb[c]}s.r=(s.b[63]==4?1:0)|(s.b[56]==4?2:0)|(s.b[7]==-4?4:0)|(s.b[0]==-4?8:0);const lo=[0,0];for(const c of[0,1,2,3,5,6,7])for(const q of[c,56+c]){if(q<32)lo[0]|=1<<q;else lo[1]|=1<<(q-32)}s.mq=[lo[0]>>>0,lo[1]>>>0]}
+return s};
+const bmOk=a=>{if(Array.isArray(a))return bmOk0(a);if(!a||typeof a!='object')return null;const o={},ints=(x,n,lo,hi)=>Array.isArray(x)&&x.length<=n&&x.every(v=>Number.isInteger(v)&&v>=lo&&v<=hi)?x.slice():null;
+const tw=ints(a.tw,16,-1,63);if(tw)o.tw=tw;if(Number.isInteger(a.sd))o.sd=a.sd;const bw=ints(a.bw,8,1,6),bb=ints(a.bb,8,1,6);if(bw&&bb&&bw.length==8&&bb.length==8&&bw[4]==6&&bb[4]==6){o.bw=bw;o.bb=bb}
+const mq=ints(a.mq,2,0,4294967295);if(mq&&mq.length==2)o.mq=mq;return Object.keys(o).length?o:null};
+function vxHud(s){const t=s.t;const h2=vxHud2(s);if(h2)return h2;
 if(VR=='soul'){const sl=slotOf(s,t),q=sl&63,ty=sl>>6;return ty&&s.b[q]*t>0?`🔮 A(z) ${GLY[Math.abs(s.b[q])-1]} most úgy lép, mint egy ${GLY[ty-1]}`:'🔮 Üss, és a bábud átveszi az áldozat mozgását a következő lépésedre'}
 if(VR=='grav')return '⬅ Gravitáció: minden lépés után a bábuk balra csúsznak';
 if(VR=='crater')return `🕳 Aktív kráterek: <b>${(s.cr||[]).length/2}</b> (ütés után 3 lépésig lezárt mező)`;
@@ -855,8 +952,8 @@ if(VR=='rev')return '🔄 Reversi: ha ellenséges tiszteket (♞♝♜♛) két 
 if(VR=='bill')return '🎱 Lökéshullám: ütéskor a szomszédos bábuk (királyok nélkül) egy mezőt távolodnak, a szélen leesnek';
 if(VR=='mirror'){const lt=mact(s),l=legal(s);return lt&&l.length&&l.every(m=>Math.abs(s.b[m.f])==lt)?`🪞 Kötelező bábu: <b>${GLY[lt-1]}</b>`:'🪞 Szabad lépés'}
 return ''}
-function vx2(s){pl.querySelectorAll('.vxl').forEach(x=>x.remove());els.forEach(e=>e&&e.classList.remove('soul','vip','bomb'));for(let i=0;i<64;i++)sqs[i].classList.remove('crater');
-if(!VX.includes(VR))return;
+function vx2(s){pl.querySelectorAll('.vxl').forEach(x=>x.remove());els.forEach(e=>e&&e.classList.remove('soul','vip','bomb','froz','heir'));for(let i=0;i<64;i++)sqs[i].classList.remove('crater');
+if(!VX.includes(VR))return;vx2b(s);
 const lab=(sq,txt,css,first)=>{const[x,y]=sqXY(sq),d=document.createElement('div');d.className='vxl';d.textContent=txt;d.style.cssText=`position:absolute;left:${x}%;top:${y}%;width:12.5%;height:12.5%;pointer-events:none;display:flex;${css}`;first?pl.prepend(d):pl.append(d)};
 if(VR=='soul')for(const t of[1,-1]){const sl=slotOf(s,t),q=sl&63,ty=sl>>6;if(ty&&s.b[q]*t>0){const e=els[q];if(e)e.classList.add('soul');lab(q,GLY[ty-1],'justify-content:flex-end;align-items:flex-end;font-size:clamp(11px,3.4vw,18px);color:#e6c8ff;text-shadow:0 0 6px #7b2bff;z-index:8;padding:1px 3px')}}
 if(VR=='crater')for(let i=0;i<(s.cr||[]).length;i+=2){sqs[s.cr[i]].classList.add('crater');lab(s.cr[i],s.cr[i+1],'justify-content:flex-end;align-items:flex-start;font-weight:800;font-size:clamp(11px,3.2vw,16px);color:#e6c8ff;text-shadow:0 0 6px #7b2bff;z-index:8;padding:1px 3px')}
@@ -878,6 +975,54 @@ e.style.zIndex=4;e.animate([{transform:tf,opacity:1},{transform:`${tf} translate
 function waveFx(sq){let r=sq>>3,c=sq&7;if(G.flip){r=7-r;c=7-c}const bs=bd.clientWidth/8,x=c*12.5+6.25,y=r*12.5+6.25;
 for(const[d,w,dl]of[[3.4,3,150],[5.2,2,300]])spawn(`left:${x}%;top:${y}%;width:${bs*d}px;height:${bs*d}px;border-radius:50%;border:${w}px solid #4fd8ff;box-shadow:0 0 14px #1e6bff;z-index:5`,[{transform:'translate(-50%,-50%) scale(.15)',opacity:.95},{transform:'translate(-50%,-50%) scale(1)',opacity:0}],700,{delay:dl});
 emit(x,y,'shard',10,1.6,150,['#4fd8ff','#ffffff']);shake(5)}
+
+/* ---- Henger, Királyjelölt, Dagály, Forgó tábla, Ikerbábuk, Szintlépés, Földrengés, Árverés, Maszkabál, Szabály-rulett ---- */
+const vnm=r=>r?VNM[r]||r:'Normál sakk',TWC=['#ff6ab0','#4fd8ff','#ffd54a','#7bd96b'];
+function bannerFx(txt,col){spawn(`left:50%;top:42%;font-size:${bd.clientWidth/8}px;line-height:1.1;font-weight:900;text-align:center;color:${col||'#fff'};text-shadow:0 0 18px #1e6bff,0 2px 6px #000;z-index:9;white-space:nowrap`,[{transform:'translate(-50%,-50%) scale(.4)',opacity:0},{transform:'translate(-50%,-50%) scale(1)',opacity:1,offset:.25},{transform:'translate(-50%,-50%) scale(1.05)',opacity:1,offset:.75},{transform:'translate(-50%,-50%) scale(1.4)',opacity:0}],1700,{delay:300}).textContent=txt}
+function chaosHud(s){const pc=s.pc|0,k=pc>>3,cur=ruleOf(s),nx=ruleK(s.sd,k+1),left=8-(pc&7);return `🎲 Szabály: <b>${vnm(cur)}</b> · még ${left} lépés · következő: <b>${vnm(nx)}</b><br><small>${vxHud(s)||''}</small>`}
+function chaosTick(s,n){const a=ruleOf(s),b=ruleOf(n);if(a!==b){bannerFx('🎲 '+vnm(b));tone(520,.2);setTimeout(()=>tone(780,.25),180)}}
+function vxHud2(s){const pc=s.pc|0;
+if(VR=='cyl')return '🛢 Henger: az a- és a h-vonal összeér, a bábuk átlépnek a szélen';
+if(VR=='heir'){const hv=s.hr==null?hrInit(s.b):s.hr;return `👑 Királyjelölt: ♔ ${hv&127?'örökös él':'✖'} · ♚ ${hv>>7?'örökös él':'✖'} <small>(matt után az örökös koronázódik, a második matt dönt)</small>`}
+if(VR=='tide'){const L=tdLvl(pc),nx=tdLvl(pc+4-pc%4),left=4-pc%4;return `🌊 Dagály: ${L}. szint · ${left} lépés múlva ${nx>L?'emelkedik':nx<L?'apad':'változatlan'} <small>(a vízben a bábuk megfagynak, nem üthetők)</small>`}
+if(VR=='rot')return `⟳ Forgó tábla: még ${6-pc%6} lépés a következő forgatásig`;
+if(VR=='twin')return '🔗 Ikerbábuk: ha egyiket leütik, a párja is elvész (azonos színű pontok jelölik a párokat)';
+if(VR=='lvl')return '⬆ Szintlépés: minden ütés után az ütő bábu feljebb lép (♟→♞→♝→♜→♛)';
+if(VR=='quake'){const j=((pc/5)|0)+1,q=qkS(j,s.sd),left=5-pc%5,fl='abcdefgh';return `🌋 Földrengés ${left} lépés múlva: ${q.row?(8-q.idx)+'. sor':fl[q.idx]+'-vonal'} ${q.row?(q.dir>0?'jobbra':'balra'):(q.dir>0?'lefelé':'felfelé')} csúszik`}
+if(VR=='auc'){const co=coOf(s),w=co&15,b=co>>4,mine=s.t>0?w:b,can=mine>=AUCC&&!s.dm;return `💰 ♔ ${w} · ♚ ${b} <button id="aucb" class="${G.payOn?'on':''}" ${can?'':'disabled'}>${G.payOn?'✔ Dupla lépés':'Dupla lépés ('+AUCC+'💰)'}</button>`}
+if(VR=='mask')return '🎭 Maszkabál: az ellenfél hátsó sorát nem látod, amíg nem lépnek, ütnek vagy nem esnek el';
+if(VR=='tt')return `⏳ Időugrásig: ${10-pc%10} lépés`;
+if(VR=='atom')return '💥 Atomi: ütéskor a környező bábuk (gyalogok nélkül) felrobbannak';
+return ''}
+function vx2b(s){const pc=s.pc|0;
+const lab=(sq,txt,css,first)=>{const[x,y]=sqXY(sq),d=document.createElement('div');d.className='vxl';d.textContent=txt;d.style.cssText=`position:absolute;left:${x}%;top:${y}%;width:12.5%;height:12.5%;pointer-events:none;display:flex;${css}`;first?pl.prepend(d):pl.append(d)};
+const box=(l,tp,w,h,css,txt)=>{const d=document.createElement('div');d.className='vxl';d.style.cssText=`position:absolute;left:${l}%;top:${tp}%;width:${w}%;height:${h}%;pointer-events:none;${css}`;if(txt){d.textContent=txt;d.style.display='flex';d.style.alignItems='center';d.style.justifyContent='center';d.style.fontSize=(bd.clientWidth/14)+'px'}pl.append(d)};
+if(VR=='cyl'){box(0,0,1,100,'z-index:6;background:linear-gradient(90deg,#4fd8ffcc,transparent)');box(99,0,1,100,'z-index:6;background:linear-gradient(270deg,#4fd8ffcc,transparent)')}
+if(VR=='tide'){const L=tdLvl(pc);if(L){const fl=q=>{const c=q&7;return c<L||c>7-L};
+box(0,0,12.5*L,100,'z-index:6;background:linear-gradient(90deg,#1e6bffaa,#4fd8ff55);animation:tdw 2.4s ease-in-out infinite alternate');box(100-12.5*L,0,12.5*L,100,'z-index:6;background:linear-gradient(270deg,#1e6bffaa,#4fd8ff55);animation:tdw 2.4s ease-in-out infinite alternate');
+for(let i=0;i<64;i++){const e=els[i];if(e&&fl(i))e.classList.add('froz')}}}
+if(VR=='quake'){const j=((pc/5)|0)+1,q=qkS(j,s.sd),left=5-pc%5,hotw=left<=2,vd=G.flip?-q.dir:q.dir;
+const css=`z-index:6;border:2px solid ${hotw?'#ff4d1f':'#ffb347'};background:linear-gradient(${q.row?(vd>0?'90deg':'270deg'):(vd>0?'180deg':'0deg')},transparent,#ff6a3d44);${hotw?'animation:qkp .5s infinite alternate':''}`;
+if(q.row)box(0,(G.flip?7-q.idx:q.idx)*12.5,100,12.5,css,vd>0?'⇢':'⇠');else box((G.flip?7-q.idx:q.idx)*12.5,0,12.5,100,css,vd>0?'⇣':'⇡')}
+if(VR=='twin'&&s.tw){const px=bd.clientWidth/100;for(let i=0;i+1<s.tw.length;i+=2){const a=s.tw[i],b2=s.tw[i+1];if(a<0||b2<0)continue;const col=TWC[(i/2)%4],[x1,y1]=sqXY(a),[x2,y2]=sqXY(b2),ax=x1+6.25,ay=y1+6.25,bx=x2+6.25,by=y2+6.25;
+const d=document.createElement('div');d.className='vxl';d.style.cssText=`position:absolute;left:${ax}%;top:${ay}%;width:${Math.hypot(bx-ax,by-ay)*px}px;height:3px;margin-top:-1px;background:linear-gradient(90deg,${col}aa,${col}33,${col}aa);box-shadow:0 0 8px ${col};transform-origin:0 50%;transform:rotate(${Math.atan2(by-ay,bx-ax)}rad);z-index:0;pointer-events:none`;pl.prepend(d);
+for(const q of[a,b2])lab(q,'●',`justify-content:flex-start;align-items:flex-start;font-size:clamp(10px,3vw,16px);color:${col};text-shadow:0 0 6px ${col};z-index:8;padding:0 3px`)}}
+if(VR=='heir'){const hv=s.hr==null?hrInit(s.b):s.hr;[hv&127,hv>>7].forEach(v=>{if(v){const q=v-1,e=els[q];if(e)e.classList.add('heir');lab(q,'👑','justify-content:flex-start;align-items:flex-start;font-size:clamp(8px,2.4vw,13px);z-index:8;padding:1px 2px')}})}
+if(VR=='mask'&&s.mq){const vw=fogView(),on=!G.over&&!G.ro&&!inAna;for(let i=0;i<64;i++){const e=els[i];if(!e)continue;const hid=on&&mqHas(s.mq,i)&&s.b[i]*vw<0;
+if(hid&&!e.dataset.hid){e.dataset.hid='1';e.innerHTML=MQTOK}else if(!hid&&e.dataset.hid){delete e.dataset.hid;e.innerHTML=svg(s.b[i]);e.firstChild.animate([{transform:'rotateY(90deg) scale(.6)'},{transform:'none'}],{duration:420})}}}}
+function cylFx(m,s){const fc=m.f&7,tc=m.t&7;if(Math.abs(tc-fc)<=4)return;const e=els[m.t];if(!e)return;e.style.transition='none';setTimeout(()=>{e.style.transition=''},60);
+e.animate([{opacity:0},{opacity:1}],{duration:380,delay:220,fill:'backwards'});const g=e.cloneNode(true);g.style.transition='none';g.style.transform=pos(m.f);pl.append(g);const dv=((tc>fc)?-1:1)*(G.flip?-1:1);
+g.animate([{transform:pos(m.f),opacity:1},{transform:pos(m.f)+` translateX(${dv*100}%)`,opacity:0}],{duration:420,fill:'forwards'}).onfinish=()=>g.remove()}
+function crownFx(n){const[kq,hq]=n.cw,ko=els[kq];if(ko){els[kq]=null;ko.animate([{opacity:1,filter:'none'},{opacity:1,filter:'brightness(3) hue-rotate(320deg)',offset:.4},{opacity:0}],{duration:700,delay:450,fill:'forwards'}).onfinish=()=>ko.remove()}
+const po=els[hq];if(po)po.remove();const ne=mkEl(hq,n.b[hq]);els[hq]=ne;ne.firstChild.animate([{transform:'scale(.3)',filter:'brightness(3)'},{transform:'scale(1.25)',filter:'brightness(2)',offset:.6},{transform:'scale(1)',filter:'none'}],{duration:800,delay:700,fill:'backwards'});
+let r=hq>>3,c=hq&7;if(G.flip){r=7-r;c=7-c}emit(c*12.5+6.25,r*12.5+6.25,'sun',16,1.5,700,['#ffd54a','#fff0c0']);bannerFx('👑','#ffd54a');tone(880,.3)}
+function twFx(n){const q=n.tv,e=els[q];if(!e)return;els[q]=null;e.style.zIndex=4;e.animate([{opacity:1,filter:'none'},{opacity:1,filter:'brightness(3) hue-rotate(200deg)',offset:.4},{opacity:0,transform:e.style.transform+' scale(.2)'}],{duration:650,delay:380,fill:'forwards'}).onfinish=()=>e.remove();
+let r=q>>3,c=q&7;if(G.flip){r=7-r;c=7-c}emit(c*12.5+6.25,r*12.5+6.25,'shard',10,1.3,420,['#ff6ab0','#4fd8ff'])}
+function lvlFx(m,s,n){const e=els[m.t],was=Math.abs(s.b[m.f]),now=Math.abs(n.b[m.t]);if(!e||was==now)return;
+setTimeout(()=>{if(G.s!==n||els[m.t]!==e)return;if(e.parentNode)e.remove();const ne=mkEl(m.t,n.b[m.t]);els[m.t]=ne;ne.firstChild.animate([{transform:'scale(.3)',filter:'brightness(3)'},{transform:'scale(1.3)',offset:.6},{transform:'scale(1)',filter:'none'}],{duration:600})},420);
+let r=m.t>>3,c=m.t&7;if(G.flip){r=7-r;c=7-c}const x=c*12.5+6.25,y=r*12.5+6.25;emit(x,y,'sun',8,1.1,420,['#7bd96b','#fff0c0']);
+spawn(`left:${x}%;top:${y}%;font-size:${bd.clientWidth/9}px;line-height:1;color:#7bd96b;text-shadow:0 0 12px #2e7d32;z-index:8`,[{transform:'translate(-50%,-50%)',opacity:0},{transform:'translate(-50%,-110%)',opacity:1,offset:.4},{transform:'translate(-50%,-190%)',opacity:0}],1000,{delay:420}).textContent='⬆'}
+$('#c3').onclick=e=>{const b=e.target.closest('#aucb');if(b&&!b.disabled){G.payOn=!G.payOn;paint()}};
 /* ---- Seakk v3: Glicko, PGN, oldalak ---- */
 GL=Object.assign({t:0,pk:0,w:0,d:0,l:0},GL);
 const oppR=()=>LV[G.lv].r+ENG[G.eng].adj+({.5:-35,1:0,2:25,4:45}[G.tm]||0);
@@ -935,8 +1080,8 @@ o.onclick=e=>{const b=e.target.closest('button');if(b){o.remove();doMove(ms[+b.d
 let WK=null,WQ={},WI=0;
 function sy(s,d,tm,rnd,ew){const e0=EW;EW=ew;const r=srch(s,d,tm,rnd);EW=e0;return r&&{m:r.m,v:r.v,all:(r.all||[]).slice(0,4).map(x=>({m:{f:x[0].f,t:x[0].t,p:x[0].p},v:x[1]}))}}
 try{WK=new Worker(URL.createObjectURL(new Blob([$('#wk').textContent])));WK.onmessage=e=>{const q=WQ[e.data.id];delete WQ[e.data.id];q&&q.res(e.data.r)};WK.onerror=()=>{WK=null;for(const k in WQ){const q=WQ[k];delete WQ[k];q.res(sy(...q.a))}}}catch(e){WK=null}
-function srchA(s,d,tm,rnd,ew){return new Promise(res=>{if(!WK)return res(sy(s,d,tm,rnd,ew));const id=++WI;WQ[id]={res,a:[s,d,tm,rnd,ew]};WK.postMessage({id,s,d,tm,rnd,ew,cf:CF,v9:V960,vr:FG()?'':VR})})}
-const lm=(s,m)=>legal(s).find(x=>x.f==m.f&&x.t==m.t&&x.p==m.p);
+function srchA(s,d,tm,rnd,ew){return new Promise(res=>{if(!WK)return res(sy(s,d,tm,rnd,ew));const id=++WI;WQ[id]={res,a:[s,d,tm,rnd,ew]};WK.postMessage({id,s,d,tm,rnd,ew,cf:CF,v9:V960,vr:FG()?'':(RLR?'':VR),rl:RLR})})}
+const lm=(s,m)=>legal(s).find(x=>x.f==m.f&&x.t==m.t&&x.p==m.p&&!!x.pay==!!m.pay);
 async function thinkA(){const L=LV[G.lv],l=legal(G.s);if(l.length<2)return l[0]||null;const ew=ENG[G.eng];let t=L.t*G.tm;if(G.clk)t=Math.min(t,Math.max(60,G.clk[G.s.t>0?0:1]/25));const r=await srchA(G.s,L.d+(ew.dd||0),t,L.k+ew.rnd*(L.d<4?1:.3),ew);return(r&&lm(G.s,r.m))||(VT?l[0]:null)}
 /* sakkóra */
 function initClk(){const v=$('#tc').value;if(v=='0'){G.clk=null;G.inc=0}else{const[a,b]=v.split(',').map(Number);G.clk=[a*6e4,a*6e4];G.inc=b*1e3}G.t0=Date.now()}
@@ -993,37 +1138,43 @@ function remote(m){if(!m||G.over)return;if(document.hidden)notify('Seakk','Az el
 /* P2P (WebRTC) */
 const enc=o=>btoa(unescape(encodeURIComponent(JSON.stringify(o)))),dec=t=>JSON.parse(decodeURIComponent(escape(atob(t.trim()))));
 const psend=o=>{if(CH&&CH.readyState=='open')CH.send(JSON.stringify(o))};
-function mkpc(){PC=new RTCPeerConnection({iceServers:[{urls:'stun:stun.l.google.com:19302'}]});PC.onconnectionstatechange=()=>{if(['failed','disconnected','closed'].includes(PC.connectionState)){$('#pi').textContent='A kapcsolat megszakadt.';if(!G.over&&G.mode=='p2p')toast('Az ellenfél kapcsolata megszakadt.')}}}
-const gathered=()=>new Promise(r=>{if(PC.iceGatheringState=='complete')return r();const f=()=>{if(PC.iceGatheringState=='complete'){PC.removeEventListener('icegatheringstatechange',f);r()}};PC.addEventListener('icegatheringstatechange',f);setTimeout(r,5000)});
-function startP2P(h,ex){ex=ex||{};const o=PI||{n:'Barát',av:'♞',r:'',id:null},m=me();NG={md:'p2p',h,names:h>0?[m.n,o.n]:[o.n,m.n],pl:h>0?[m,o]:[o,m],net:mv=>psend({k:'m',f:mv.f,t:mv.t,p:mv.p||0}),fen:ex.fen||null,v:ex.v,bm:ex.bm||null};newGame();if(ex.nm){G.roul=ex.nm;showOp()}tab('j');notify('Online játék','A játszma elkezdődött: '+o.n)}
+function startP2P(h,ex){ex=ex||{};const o=PI||{n:'Barát',av:'♞',r:'',id:null},m=me();NG={md:'p2p',h,names:h>0?[m.n,o.n]:[o.n,m.n],pl:h>0?[m,o]:[o,m],net:mv=>psend({k:'m',f:mv.f,t:mv.t,p:mv.p||0,y:mv.pay?1:0}),fen:ex.fen||null,v:ex.v,bm:ex.bm||null};newGame();if(ex.nm){G.roul=ex.nm;showOp()}tab('j');notify('Online játék','A játszma elkezdődött: '+o.n)}
 function pmsg(o){if(o.k=='hi'){PI={n:esc(o.n).slice(0,18)||'Barát',av:esc(o.av).slice(0,4)||'♞',r:+o.r||'',id:esc(o.id).slice(0,12)};GM={a:0,b:0,n:0};rmMenu()}
-else if(o.k=='go')rmGo(o);else if(o.k=='m'&&G.mode=='p2p'&&G.s.t!=G.human){remote(legal(G.s).find(x=>x.f==o.f&&x.t==o.t&&(!x.p||x.p==(o.p||5))))}
+else if(o.k=='go')rmGo(o);else if(o.k=='m'&&G.mode=='p2p'&&G.s.t!=G.human){remote(legal(G.s).find(x=>x.f==o.f&&x.t==o.t&&(!x.p||x.p==(o.p||5))&&!!x.pay==!!o.y))}
 else if(o.k=='res'&&G.mode=='p2p'&&!G.over)end(G.human,'Az ellenfél feladta');
 else if(o.k=='dr'&&G.mode=='p2p'&&!G.over){if(confirm('Az ellenfél döntetlent ajánl. Elfogadod?')){psend({k:'da'});end(0,'Döntetlen megegyezéssel')}}
 else if(o.k=='da'&&G.mode=='p2p'&&!G.over)end(0,'Döntetlen megegyezéssel');else if(o.k=='em'&&EMO.includes(o.e))floatEmo(o.e,0);else vsMsg(o)}
 function chan(c){CH=c;c.onclose=()=>{GT.vs=0;RL.vs=0;$('#rmm').hidden=1};c.onopen=()=>{rmQuiet();$('#pi').textContent='Kapcsolódva!';psend(Object.assign({k:'hi'},me()))};c.onmessage=e=>{try{pmsg(JSON.parse(e.data))}catch(x){}}}
 /* ---- Baráti szoba: rövid kód. A jelzést a fiók nélküli ntfy.sh csatorna viszi, a játék közvetlenül (WebRTC) megy ---- */
 const SIGU=()=>window.SIGURL||'https://ntfy.sh',RMA='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';let RM={},GM={a:0,b:0,n:0};
-const rmCode=()=>Array.from(crypto.getRandomValues(new Uint8Array(5)),x=>RMA[x%32]).join('');
-const sigPub=(c,o)=>fetch(SIGU()+'/seakk-'+c,{method:'POST',body:JSON.stringify(o)}).then(r=>{if(!r.ok)throw 0});
-function sigSub(c,cb){const es=new EventSource(SIGU()+'/seakk-'+c+'/sse?since=all');es.addEventListener('message',e=>{try{const m=JSON.parse(e.data);if(m.event=='message')cb(JSON.parse(m.message))}catch(x){}});return es}
-function fit(d){const s=d.sdp.split('\r\n'),ci=()=>s.map((l,i)=>l.startsWith('a=candidate')?i:-1).filter(i=>i>=0),ln=()=>JSON.stringify({type:d.type,sdp:s.join('\r\n')}).length;
-while(ln()>3800&&ci().length>1){const c=ci();s.splice(c[c.length-1],1)}return{type:d.type,sdp:s.join('\r\n')}}
-const rmQuiet=()=>{try{RM.es&&RM.es.close()}catch(e){}clearTimeout(RM.to);clearTimeout(RM.to2);RM.es=null},rmSay=m=>$('#pi').textContent=m;
-async function rmOpen(){rmQuiet();if(CH)try{CH.close()}catch(e){}const code=rmCode();RM={code};PS='host';$('#rmm').hidden=1;rmSay('Szoba létrehozása…');
-try{mkpc();chan(PC.createDataChannel('c'));await PC.setLocalDescription(await PC.createOffer());await gathered();await sigPub(code,{t:'offer',d:fit(PC.localDescription)});
-RM.es=sigSub(code,async o=>{if(o.t=='answer'&&PC&&PS=='host'&&!PC.remoteDescription){try{await PC.setRemoteDescription(o.d);rmSay('Kapcsolódás…')}catch(e){}}});
+const rmCode=()=>Array.from(crypto.getRandomValues(new Uint8Array(5)),x=>RMA[x%32]).join(''),rid=()=>Array.from(crypto.getRandomValues(new Uint8Array(8)),x=>RMA[x%32]).join('');
+const rmSay=m=>$('#pi').textContent=m,rmQuiet=()=>{clearTimeout(RM.to);clearTimeout(RM.to2)};
+/* Közvetítős átvitel: minden üzenet a nyilvános ntfy.sh témán át megy, ezért nem kell közvetlen hálózati kapcsolat (NAT / mobilnet mellett is működik) */
+function rmStop(){try{RM.es&&RM.es.close()}catch(e){}RM.dead=1;RM.es=null;rmQuiet()}
+function rmPost(o){const code=RM.code;RM.pq=(RM.pq||Promise.resolve()).then(async()=>{for(let i=0;i<8;i++){try{const r=await fetch(SIGU()+'/seakk-'+code,{method:'POST',body:JSON.stringify(o)});if(r.ok)return;if(r.status!=429&&r.status<500)break}catch(e){}await new Promise(s=>setTimeout(s,1200*(i+1)))}toast('Az üzenet elküldése nem sikerült, ellenőrizd a hálózatot.')})}
+const rmSend=o=>{o.s=RM.id;o.q=++RM.q;rmPost(o)};
+function rmSub(onmsg){const open=()=>{const es=new EventSource(SIGU()+'/seakk-'+RM.code+'/sse?since=all');RM.es=es;
+es.addEventListener('message',e=>{try{const m=JSON.parse(e.data);if(m.event!='message')return;const o=JSON.parse(m.message);if(!o||o.s===RM.id||typeof o.q!='number')return;const l=RM.last[o.s]||0;if(!(o.q>l))return;RM.last[o.s]=o.q;onmsg(o)}catch(x){}});
+es.onerror=()=>{if(es.readyState==2&&!RM.dead)setTimeout(()=>{if(!RM.dead)open()},3000)}};open()}
+function relayCh(){const c={readyState:'open',send:s=>rmSend({k:'d',d:s}),close(){if(c.readyState!='open')return;c.readyState='closed';rmSend({k:'bye'});const q=RM.pq;rmStop();c.onclose&&c.onclose()}};return c}
+function rmIn(o){if(RM.peer!==o.s)return;if(o.k=='d'&&CH&&CH.onmessage)CH.onmessage({data:o.d});else if(o.k=='bye'){if(CH){CH.readyState='closed';CH.onclose&&CH.onclose()}rmSay('Az ellenfél kilépett.');toast('Az ellenfél kilépett.');rmStop()}}
+const rmLink=c=>{const x=relayCh();chan(x);x.onopen()};
+async function rmOpen(){rmStop();if(CH)try{CH.close()}catch(e){}const code=rmCode();RM={code,id:rid(),q:0,last:{}};PS='host';$('#rmm').hidden=1;rmSay('Szoba létrehozása…');
+try{const r=await fetch(SIGU()+'/seakk-'+code,{method:'POST',body:JSON.stringify({s:RM.id,q:++RM.q,k:'open'})});if(!r.ok)throw 0;
+rmSub(o=>{if(o.k=='join'){if(!RM.peer){RM.peer=o.s;rmSend({k:'ack',to:o.s});rmLink()}else if(o.s!==RM.peer)rmSend({k:'busy',to:o.s})}else rmIn(o)});
 $('#rmk').textContent=code;$('#rmo').hidden=0;$('#rml').hidden=!/^https?:/.test(location.protocol)||nat();rmSay('Mondd el a kódot a barátodnak. A szoba 10 percig nyitva marad.');
-RM.to=setTimeout(()=>{if(!CH||CH.readyState!='open'){rmQuiet();$('#rmo').hidden=1;rmSay('A szoba lejárt, senki nem csatlakozott.')}},6e5)}
-catch(e){rmQuiet();rmSay('Nem sikerült szobát nyitni (nincs hálózat, vagy a WebRTC nem elérhető).')}}
-async function rmJoin(c){c=String(c||'').toUpperCase().replace(/[^A-Z0-9]/g,'');if(c.length!=5)return rmSay('A kód 5 karakter.');rmQuiet();if(CH)try{CH.close()}catch(e){}RM={code:c};PS='guest';$('#rmm').hidden=1;$('#rmo').hidden=1;rmSay('Csatlakozás…');let done=0;
-try{RM.es=sigSub(c,async o=>{if(done||o.t!='offer')return;done=1;try{mkpc();PC.ondatachannel=e=>chan(e.channel);await PC.setRemoteDescription(o.d);await PC.setLocalDescription(await PC.createAnswer());await gathered();await sigPub(c,{t:'answer',d:fit(PC.localDescription)});rmSay('Kapcsolódás…');
-RM.to2=setTimeout(()=>{if(!CH||CH.readyState!='open')rmSay('A házigazda nem válaszol, lehet, hogy lejárt a szoba.')},2e4)}catch(e){rmSay('A kapcsolat nem jött létre.')}});
-RM.to=setTimeout(()=>{if(!done){rmQuiet();rmSay('Nincs ilyen szoba, vagy lejárt.')}},12e3)}catch(e){rmSay('Nem sikerült csatlakozni (nincs hálózat).')}}
+RM.to=setTimeout(()=>{if(!CH||CH.readyState!='open'){rmStop();$('#rmo').hidden=1;rmSay('A szoba lejárt, senki nem csatlakozott.')}},6e5)}
+catch(e){rmStop();rmSay('Nem sikerült szobát nyitni: a közvetítő szerver (ntfy.sh) most nem érhető el.')}}
+async function rmJoin(c){c=String(c||'').toUpperCase().replace(/[^A-Z0-9]/g,'');if(c.length!=5)return rmSay('A kód 5 karakter.');rmStop();if(CH)try{CH.close()}catch(e){}RM={code:c,id:rid(),q:0,last:{}};PS='guest';$('#rmm').hidden=1;$('#rmo').hidden=1;rmSay('Csatlakozás…');
+try{rmSub(o=>{if(o.k=='ack'&&o.to===RM.id&&!RM.peer){RM.peer=o.s;clearTimeout(RM.to);rmLink()}else if(o.k=='busy'&&o.to===RM.id&&!RM.peer){rmStop();rmSay('A szoba már foglalt.')}else rmIn(o)});
+const r=await fetch(SIGU()+'/seakk-'+c,{method:'POST',body:JSON.stringify({s:RM.id,q:++RM.q,k:'join'})});if(!r.ok)throw 0;
+RM.to=setTimeout(()=>{if(!RM.peer){rmStop();rmSay('Nincs ilyen szoba, vagy a házigazda nem válaszol.')}},15e3)}
+catch(e){rmStop();rmSay('Nem sikerült csatlakozni: a közvetítő szerver (ntfy.sh) most nem érhető el.')}}
+addEventListener('pagehide',()=>{if(CH&&CH.readyState=='open'&&RM.code&&navigator.sendBeacon){try{navigator.sendBeacon(SIGU()+'/seakk-'+RM.code,JSON.stringify({s:RM.id,q:++RM.q,k:'bye'}))}catch(e){}}});
 function rmMenu(){$('#rmm').hidden=0;$('#rmo').hidden=1;$('#rmw').textContent='Kapcsolódva: '+(PI?PI.n:'?')+(PS=='host'?'. Te vagy a házigazda, te indítod a játékot.':'. A házigazda indítja a játékot, vagy kérheted tőle.')}
 const rgGo=g=>{if(!CH||CH.readyState!='open')return toast('Nincs kapcsolat.');if(G.mode=='p2p'&&!G.over)return toast('Előbb fejezzétek be a játszmát.');if(PS!='host'){psend({k:'ask',g});return toast('Kérés elküldve a házigazdának.')}if(g=='chess')rmChess();else if(g=='gte')vsGte();else rlVs()};
 ['rg1','rg2','rg3'].forEach((id,i)=>$('#'+id).onclick=()=>rgGo(['chess','gte','rl'][i]));
-function rmChess(){const hc=+$('#col').value||(Math.random()<.5?1:-1);let v=$('#vr').value;if(v=='hex')v='n';let fen=null;if(v=='960'||/^[hH]/.test(v))fen=vFen(v,hc,'p2p');const vv=v=='960'||v=='tp'||V4.includes(v)?v:'n',bm=vv=='bomb'?bmInit(init(),null):null;psend({k:'go',h:-hc,fen,v:vv,bm});startP2P(hc,{fen,v:vv,bm})}
+function rmChess(){const hc=+$('#col').value||(Math.random()<.5?1:-1);let v=$('#vr').value;if(v=='hex')v='n';let fen=null;if(v=='960'||/^[hH]/.test(v))fen=vFen(v,hc,'p2p');const vv=v=='960'||v=='tp'||V4.includes(v)?v:'n',bm=bmInit(init(),null,vv,1);psend({k:'go',h:-hc,fen,v:vv,bm});startP2P(hc,{fen,v:vv,bm})}
 function rmGo(o){if(G.mode=='p2p'&&!G.over)return;let fen=typeof o.fen=='string'&&o.fen.length<100?o.fen:null;if(fen){try{setV('n');fromFen(fen)}catch(e){fen=null}finally{setV(G.v||'n',G.cf)}}
 startP2P(o.h==1?1:-1,{fen,bm:bmOk(o.bm),v:o.v=='960'||o.v=='tp'||V4.includes(o.v)?o.v:'n',nm:typeof o.nm=='string'?o.nm.slice(0,40):''})}
 $('#rmn').onclick=rmOpen;$('#rmj').onclick=()=>rmJoin($('#rmc').value);$('#rmc').onkeydown=e=>{if(e.key=='Enter')rmJoin($('#rmc').value)};
@@ -1086,7 +1237,7 @@ ld(VW.full,k,1);$('#st').textContent=`Visszanézés: ${k}/${n}. lépés. A ▶ g
 $('#vb').onclick=()=>view(-1);$('#vf').onclick=()=>view(1);
 /* ---- Seakk v9: FEN, végjáték, premove, edző, nyelv, téma ---- */
 const LANG=localStorage.getItem('seakk_lang')||((navigator.language||'hu').slice(0,2)=='hu'?'hu':'en');
-const DT='Reversi-sakk=Reversi chess;Biliárd-sakk=Billiard chess;Reversi: ha ellenséges tiszteket (♞♝♜♛) két saját bábud közé szorítasz, átállnak=Reversi: sandwich enemy pieces (♞♝♜♛) between two of your own and they switch sides;Lökéshullám: ütéskor a szomszédos bábuk (királyok nélkül) egy mezőt távolodnak, a szélen leesnek=Shockwave: on a capture the neighbouring pieces (not kings) are pushed one square away and fall off at the edge;Lélekvándorlás=Soul swap;Gravitációs sakk=Gravity chess;Kráter-sakk=Crater chess;Királyi testőrség=Royal guard;Időzített bomba=Hot potato;Tükör-sakk=Mirror chess;VIP győzelem=VIP victory;Üss, és a bábud átveszi az áldozat mozgását a következő lépésedre=Capture, and your piece takes the victim’s movement for your next move;Gravitáció: minden lépés után a bábuk balra csúsznak=Gravity: after every move the pieces slide left;Aktív kráterek:=Active craters:;(ütés után 3 lépésig lezárt mező)=(a square is blocked for 3 plies after a capture);Cél: a vezéred érje el az ellenfél alapvonalát (a vezér leütése is győzelem, sakk nincs)=Goal: get your queen to the opponent’s back rank (capturing their queen also wins, no check);(üss vagy lépj új bábu mellé, különben robban)=(capture or step next to a new friendly piece, or it explodes);Kötelező bábu:=Forced piece:;Szabad lépés=Free move;Vak-zóna=Blind zone;Legjobb:=Best:;Időugrás=Time jump;Túlélő mód (hullámok)=Survival mode (waves);Időugrásig:=Until time jump:;lépés=moves;↑ előre=↑ forward;↓ hátra=↓ back;Hullám visszaverve!=Wave repelled!;Válassz egy új bábut jutalmul:=Choose a new piece as a reward:;Gyalog=Pawn;Huszár=Knight;Futó=Bishop;Bástya=Rook;Vezér=Queen;Vége a túlélő futamnak=Survival run over;Visszavert hullámok:=Waves repelled:;új rekord!=new record!;Új futam=New run;Hullám=Wave;ellenség:=enemies:;visszavert:=repelled:;legjobb:=best:;futamok:=runs:;A túlélő módban nincs visszavonás.=No undo in survival mode.;ÁLLÁSSZERKESZTŐ=POSITION EDITOR;Állásszerkesztő=Position editor;MINIJÁTÉKOK ÉS ESZKÖZÖK=MINI-GAMES & TOOLS;Tábla ürítése=Clear board;Alapállás=Starting position;Világos jön=White to move;Sötét jön=Black to move;Sáncolási jogok:=Castling rights:;FEN másolása=Copy FEN;FEN betöltése=Load FEN;Világossal játszom=I play White;Sötéttel játszom=I play Black;Véletlen szín=Random colour;Játék a gép ellen=Play vs computer;Játék 2 játékossal=Play 2 players;Koppints egy bábura a palettán, majd a mezőkre. 🗑 töröl, ✥ áthelyez. A játszma nem értékelt.=Tap a piece on the palette, then the squares. 🗑 erases, ✥ moves. The game is unrated.;Mindkét félnek pontosan egy királya legyen.=Each side must have exactly one king.;Gyalog nem állhat az 1. vagy 8. soron.=Pawns cannot stand on the 1st or 8th rank.;Érvénytelen állás: a nem soron lévő fél királya sakkban áll.=Invalid position: the side not to move is in check.;Érvénytelen FEN.=Invalid FEN.;FEN másolva.=FEN copied.;Meghívó link=Invite link;Variáns: Király a hegyen=Variant: King of the Hill;Variáns: Három sakk=Variant: Three-check;Variáns: Atomi sakk=Variant: Atomic chess;Variáns: Ködös sakk=Variant: Fog of war;Király a hegyen=King of the Hill;Három sakk=Three-check;Atomi sakk=Atomic chess;Ködös sakk=Fog of war;Felrobbant a király=King exploded;Következő játékos:=Next player:;Add át a készüléket, és csak ő koppintson a gombra.=Hand over the device; only they should tap the button.;Kész, mutasd a táblát=Ready, show the board;Köd: a lépéslista a játszma végén jelenik meg.=Fog: the move list appears at the end of the game.;Ködben nincs tipp.=No hints in the fog.;BARÁTI SZOBA (RÖVID KÓD)=FRIEND ROOM (SHORT CODE);Az egyik játékos szobát nyit, a másik beírja az 5 jegyű kódot (vagy megnyitja a linket). Fiók és bejelentkezés nélkül, a játék közvetlenül a két eszköz között zajlik.=One player opens a room, the other types the 5-character code (or opens the link). No account or login, the game runs directly between the two devices.;Szoba nyitása=Open room;Csatlakozás=Join;Kód másolása=Copy code;Link másolása=Copy link;Sakkjátszma=Chess game;Guess the Elo párbaj=Guess the Elo duel;Mondd el a kódot a barátodnak. A szoba 10 percig nyitva marad.=Tell your friend the code. The room stays open for 10 minutes.;Kapcsolódás…=Connecting…;Kapcsolódva!=Connected!;Kérés elküldve a házigazdának.=Request sent to the host.;Előbb fejezzétek be a játszmát.=Finish the current game first.;A házigazda választ színt és indítja a játékot.=The host picks the colour and starts the game.;A házigazda játszmát generál…=The host is generating a game…;Várakozás az ellenfélre…=Waiting for the opponent…;Guess the Elo=Guess the Elo;A játékosok szintje:=Players’ level:;A tipped:=Your guess:;az eltérés:=the difference:;Eddigi tippek:=Guesses so far:;átlagos pontszám:=average score:;átlagos eltérés:=average error:;legjobb:=best:;Még nem tippeltél.=No guesses yet.;Játszma generálása…=Generating game…;Nem sikerült játszmát generálni, próbáld újra.=Could not generate a game, try again.;Mindkét fél azonos erősségű gép (500–2000 Elo). Mekkora a szintjük? Tipp:=Both sides are the same-strength engine (500–2000 Elo). What is their level? Guess:;⏸ Szünet=⏸ Pause;Guess the Elo: nézz végig egy játszmát, és tippeld meg a játékosok szintjét. Nyitás-rulett: a kerék kisorsol egy megnyitást, és te abból játszol a gép ellen.=Guess the Elo: watch a game and guess the players’ level. Opening roulette: the wheel picks an opening and you play it against the computer.;A kiindulás a kisorsolt állás, a gép az aktuális szinten játszik. Nem értékelt.=You start from the drawn position and the computer plays at the current level. Unrated.;Nyitás-rulett=Opening roulette;MINIJÁTÉKOK=MINI-GAMES;Pörgetés=Spin;Új kerék=New wheel;Világossal=As White;Sötéttel=As Black;Véletlen=Random;← Vissza=← Back;Tippelek=Submit guess;▶ Lejátszás=▶ Play;Új játszma=New game;Normál sakk=Standard chess;Teleport sakk=Teleport chess;Gép vezér nélkül=Computer without queen;Gép bástya nélkül=Computer without rook;Gép huszár nélkül=Computer without knight;Gép f-gyalog nélkül=Computer without f-pawn;Én vezér nélkül=Me without queen;Én bástya nélkül=Me without rook;Én huszár nélkül=Me without knight;Én f-gyalog nélkül=Me without f-pawn;Hatszögsakk (3 játékos)=Hexagonal chess (3 players);1 ember + 2 gép=1 human + 2 computers;3 ember, egy készüléken=3 humans, one device;Vissza a sakkhoz=Back to chess;Beáll.=Settings;Előzm.=History;Játék keresése=Find a game;Játékmód: gép ellen=Mode: vs computer;Játékmód=Game mode;Két játékos, egy készüléken=Two players, one device;Két játékos egy készüléken.=Two players on one device.;Online játék baráttal.=Online game with a friend.;Játék a Lichessen.=Game on Lichess.;Nem értékelt.=Unrated.;Játékos=Player;Játék=Play;Elemzés=Analysis;Profil=Profile;Új játszma=New game;Forgatás=Flip;Visszavonás=Undo;Tipp=Hint;Döntetlen megegyezéssel=Draw by agreement;Döntetlenajánlat elküldve.=Draw offer sent.;Az ellenfél döntetlent ajánl. Elfogadod?=The opponent offers a draw. Do you accept?;Elfogadja a másik játékos a döntetlent?=Does the other player accept the draw?;A gép elutasítja a döntetlent.=The computer declines the draw.;Döntetlen=Draw;Feladás=Resign;Feladtad=You resigned;Az ellenfél feladta=The opponent resigned;Letöltés=Download;Másolás=Copy;Bezár=Close;Következő=Next;Megoldás=Solution;Napi feladvány=Daily puzzle;Kihívás elküldve, várunk az elfogadásra.=Challenge sent, waiting for acceptance.;Kihívás=Challenge;Bejelentkezés=Log in;Kijelentkezés=Log out;Exportálás=Export;Import fájlból=Import from file;Import beillesztéssel=Import by pasting;Összes játszma PGN-ben=All games as PGN;PGN betöltése elemzésre=Load PGN for analysis;Pontszám nullázása=Reset rating;Indítás=Start;FEN másolása=Copy FEN;FEN betöltése=Load FEN;Érvénytelen FEN.=Invalid FEN.;'
+const DT='Henger=Cylinder;Királyjelölt=King candidate;Dagály=High tide;Forgó tábla=Rotating board;Ikerbábuk=Twin pieces;Szintlépés-sakk=Level-up chess;Földrengés=Earthquake;Árverés-sakk=Auction chess;Maszkabál=Masquerade;Szabály-rulett=Rule roulette;Normál sakk=Standard chess;Dupla lépés=Double move;✔ Dupla lépés=✔ Double move;Szabály:=Rule:;következő:=next:;Reversi-sakk=Reversi chess;Biliárd-sakk=Billiard chess;Reversi: ha ellenséges tiszteket (♞♝♜♛) két saját bábud közé szorítasz, átállnak=Reversi: sandwich enemy pieces (♞♝♜♛) between two of your own and they switch sides;Lökéshullám: ütéskor a szomszédos bábuk (királyok nélkül) egy mezőt távolodnak, a szélen leesnek=Shockwave: on a capture the neighbouring pieces (not kings) are pushed one square away and fall off at the edge;Lélekvándorlás=Soul swap;Gravitációs sakk=Gravity chess;Kráter-sakk=Crater chess;Királyi testőrség=Royal guard;Időzített bomba=Hot potato;Tükör-sakk=Mirror chess;VIP győzelem=VIP victory;Üss, és a bábud átveszi az áldozat mozgását a következő lépésedre=Capture, and your piece takes the victim’s movement for your next move;Gravitáció: minden lépés után a bábuk balra csúsznak=Gravity: after every move the pieces slide left;Aktív kráterek:=Active craters:;(ütés után 3 lépésig lezárt mező)=(a square is blocked for 3 plies after a capture);Cél: a vezéred érje el az ellenfél alapvonalát (a vezér leütése is győzelem, sakk nincs)=Goal: get your queen to the opponent’s back rank (capturing their queen also wins, no check);(üss vagy lépj új bábu mellé, különben robban)=(capture or step next to a new friendly piece, or it explodes);Kötelező bábu:=Forced piece:;Szabad lépés=Free move;Vak-zóna=Blind zone;Legjobb:=Best:;Időugrás=Time jump;Túlélő mód (hullámok)=Survival mode (waves);Időugrásig:=Until time jump:;lépés=moves;↑ előre=↑ forward;↓ hátra=↓ back;Hullám visszaverve!=Wave repelled!;Válassz egy új bábut jutalmul:=Choose a new piece as a reward:;Gyalog=Pawn;Huszár=Knight;Futó=Bishop;Bástya=Rook;Vezér=Queen;Vége a túlélő futamnak=Survival run over;Visszavert hullámok:=Waves repelled:;új rekord!=new record!;Új futam=New run;Hullám=Wave;ellenség:=enemies:;visszavert:=repelled:;legjobb:=best:;futamok:=runs:;A túlélő módban nincs visszavonás.=No undo in survival mode.;ÁLLÁSSZERKESZTŐ=POSITION EDITOR;Állásszerkesztő=Position editor;MINIJÁTÉKOK ÉS ESZKÖZÖK=MINI-GAMES & TOOLS;Tábla ürítése=Clear board;Alapállás=Starting position;Világos jön=White to move;Sötét jön=Black to move;Sáncolási jogok:=Castling rights:;FEN másolása=Copy FEN;FEN betöltése=Load FEN;Világossal játszom=I play White;Sötéttel játszom=I play Black;Véletlen szín=Random colour;Játék a gép ellen=Play vs computer;Játék 2 játékossal=Play 2 players;Koppints egy bábura a palettán, majd a mezőkre. 🗑 töröl, ✥ áthelyez. A játszma nem értékelt.=Tap a piece on the palette, then the squares. 🗑 erases, ✥ moves. The game is unrated.;Mindkét félnek pontosan egy királya legyen.=Each side must have exactly one king.;Gyalog nem állhat az 1. vagy 8. soron.=Pawns cannot stand on the 1st or 8th rank.;Érvénytelen állás: a nem soron lévő fél királya sakkban áll.=Invalid position: the side not to move is in check.;Érvénytelen FEN.=Invalid FEN.;FEN másolva.=FEN copied.;Meghívó link=Invite link;Variáns: Király a hegyen=Variant: King of the Hill;Variáns: Három sakk=Variant: Three-check;Variáns: Atomi sakk=Variant: Atomic chess;Variáns: Ködös sakk=Variant: Fog of war;Király a hegyen=King of the Hill;Három sakk=Three-check;Atomi sakk=Atomic chess;Ködös sakk=Fog of war;Felrobbant a király=King exploded;Következő játékos:=Next player:;Add át a készüléket, és csak ő koppintson a gombra.=Hand over the device; only they should tap the button.;Kész, mutasd a táblát=Ready, show the board;Köd: a lépéslista a játszma végén jelenik meg.=Fog: the move list appears at the end of the game.;Ködben nincs tipp.=No hints in the fog.;BARÁTI SZOBA (RÖVID KÓD)=FRIEND ROOM (SHORT CODE);Az egyik játékos szobát nyit, a másik beírja az 5 jegyű kódot (vagy megnyitja a linket). Fiók és bejelentkezés nélkül. Az üzenetek a nyilvános ntfy.sh csatornán át mennek, ezért mobilnet és tűzfal mögött is működik.=One player opens a room, the other types the 5-character code (or opens the link). No account or login. Messages go through the public ntfy.sh channel, so it works on mobile data and behind firewalls too.;Szoba nyitása=Open room;Csatlakozás=Join;Kód másolása=Copy code;Link másolása=Copy link;Sakkjátszma=Chess game;Guess the Elo párbaj=Guess the Elo duel;Mondd el a kódot a barátodnak. A szoba 10 percig nyitva marad.=Tell your friend the code. The room stays open for 10 minutes.;Kapcsolódás…=Connecting…;Kapcsolódva!=Connected!;Kérés elküldve a házigazdának.=Request sent to the host.;Előbb fejezzétek be a játszmát.=Finish the current game first.;A házigazda választ színt és indítja a játékot.=The host picks the colour and starts the game.;A házigazda játszmát generál…=The host is generating a game…;Várakozás az ellenfélre…=Waiting for the opponent…;Guess the Elo=Guess the Elo;A játékosok szintje:=Players’ level:;A tipped:=Your guess:;az eltérés:=the difference:;Eddigi tippek:=Guesses so far:;átlagos pontszám:=average score:;átlagos eltérés:=average error:;legjobb:=best:;Még nem tippeltél.=No guesses yet.;Játszma generálása…=Generating game…;Nem sikerült játszmát generálni, próbáld újra.=Could not generate a game, try again.;Mindkét fél azonos erősségű gép (500–2000 Elo). Mekkora a szintjük? Tipp:=Both sides are the same-strength engine (500–2000 Elo). What is their level? Guess:;⏸ Szünet=⏸ Pause;Guess the Elo: nézz végig egy játszmát, és tippeld meg a játékosok szintjét. Nyitás-rulett: a kerék kisorsol egy megnyitást, és te abból játszol a gép ellen.=Guess the Elo: watch a game and guess the players’ level. Opening roulette: the wheel picks an opening and you play it against the computer.;A kiindulás a kisorsolt állás, a gép az aktuális szinten játszik. Nem értékelt.=You start from the drawn position and the computer plays at the current level. Unrated.;Nyitás-rulett=Opening roulette;MINIJÁTÉKOK=MINI-GAMES;Pörgetés=Spin;Új kerék=New wheel;Világossal=As White;Sötéttel=As Black;Véletlen=Random;← Vissza=← Back;Tippelek=Submit guess;▶ Lejátszás=▶ Play;Új játszma=New game;Normál sakk=Standard chess;Teleport sakk=Teleport chess;Gép vezér nélkül=Computer without queen;Gép bástya nélkül=Computer without rook;Gép huszár nélkül=Computer without knight;Gép f-gyalog nélkül=Computer without f-pawn;Én vezér nélkül=Me without queen;Én bástya nélkül=Me without rook;Én huszár nélkül=Me without knight;Én f-gyalog nélkül=Me without f-pawn;Hatszögsakk (3 játékos)=Hexagonal chess (3 players);1 ember + 2 gép=1 human + 2 computers;3 ember, egy készüléken=3 humans, one device;Vissza a sakkhoz=Back to chess;Beáll.=Settings;Előzm.=History;Játék keresése=Find a game;Játékmód: gép ellen=Mode: vs computer;Játékmód=Game mode;Két játékos, egy készüléken=Two players, one device;Két játékos egy készüléken.=Two players on one device.;Online játék baráttal.=Online game with a friend.;Játék a Lichessen.=Game on Lichess.;Nem értékelt.=Unrated.;Játékos=Player;Játék=Play;Elemzés=Analysis;Profil=Profile;Új játszma=New game;Forgatás=Flip;Visszavonás=Undo;Tipp=Hint;Döntetlen megegyezéssel=Draw by agreement;Döntetlenajánlat elküldve.=Draw offer sent.;Az ellenfél döntetlent ajánl. Elfogadod?=The opponent offers a draw. Do you accept?;Elfogadja a másik játékos a döntetlent?=Does the other player accept the draw?;A gép elutasítja a döntetlent.=The computer declines the draw.;Döntetlen=Draw;Feladás=Resign;Feladtad=You resigned;Az ellenfél feladta=The opponent resigned;Letöltés=Download;Másolás=Copy;Bezár=Close;Következő=Next;Megoldás=Solution;Napi feladvány=Daily puzzle;Kihívás elküldve, várunk az elfogadásra.=Challenge sent, waiting for acceptance.;Kihívás=Challenge;Bejelentkezés=Log in;Kijelentkezés=Log out;Exportálás=Export;Import fájlból=Import from file;Import beillesztéssel=Import by pasting;Összes játszma PGN-ben=All games as PGN;PGN betöltése elemzésre=Load PGN for analysis;Pontszám nullázása=Reset rating;Indítás=Start;FEN másolása=Copy FEN;FEN betöltése=Load FEN;Érvénytelen FEN.=Invalid FEN.;'
 +'LÉPÉSEK=MOVES;ELLENFÉL=OPPONENT;SAKKÓRA=CLOCK;SEGÍTSÉG ÉS ANIMÁCIÓ=ASSIST AND ANIMATION;STÍLUS=STYLE;MENTÉS=BACKUP;ELEMZÉS=ANALYSIS;ELŐZMÉNYEK=HISTORY;PUZZLE A SAJÁT HIBÁIDBÓL=PUZZLES FROM YOUR OWN MISTAKES;VÉGJÁTÉKGYAKORLÁS=ENDGAME PRACTICE;JELVÉNYEK=BADGES;VÁRHATÓ EREDMÉNY SZINTENKÉNT=EXPECTED SCORE BY LEVEL;LICHESS-SZERŰ (GLICKO-2) PONTSZÁM=LICHESS-STYLE (GLICKO-2) RATING;LICHESS-FIÓK (OAUTH)=LICHESS ACCOUNT (OAUTH);JÁTÉK BARÁTTAL (KÖZVETLEN KAPCSOLAT, SZERVER NÉLKÜL)=PLAY A FRIEND (DIRECT CONNECTION, NO SERVER);NYELV / LANGUAGE=LANGUAGE;'
 +'Világos=White;Sötét=Black;Véletlen=Random;Normál idő=Normal time;Gyors=Fast;Lassú=Slow;Mély=Deep;Nincs óra=No clock;perc=min;Lépésjelölés: be=Move hints: on;Lépésjelölés: ki=Move hints: off;Animáció: be=Animation: on;Animáció: ki=Animation: off;Hang és rezgés: be=Sound and vibration: on;Hang és rezgés: ki=Sound and vibration: off;Téma: sötét=Theme: dark;Téma: világos=Theme: light;Téma: automatikus=Theme: automatic;Kezdőállás=Starting position;Kezdő=Beginner;Újonc=Novice;Haladó=Intermediate;Klub=Club;Erős=Strong;Nagymester=Grandmaster;Mester szint legyőzve=Master level beaten;Mester=Master;(alap)=(default);'
 +'Kiegyensúlyozott alapmotor, ez az alapértelmezett.=Balanced default engine.;Támadó: figuráit az ellenfél királya köré csoportosítja.=Aggressive: gathers its pieces around the enemy king.;Szilárd: gyalogszerkezetre és királybiztonságra épít.=Solid: builds on pawn structure and king safety.;Kockázatos, váratlan lépéseket választ.=Risky, picks unexpected moves.;Obszidián=Obsidian;Kristály=Crystal;Logó=Logo;Erdő=Forest;Naplemente=Sunset;Rózsa=Rose;Homok=Sand;Jég=Ice;Láva=Lava;'
